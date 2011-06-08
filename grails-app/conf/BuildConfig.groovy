@@ -44,6 +44,9 @@ grails.project.dependency.resolution = {
 //		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
 		compile ":class-diagram:0.5.2"
 		
+//		FIXME http://jira.grails.org/browse/GPFIXTURES-19
+//		runtime ":fixtures:1.0.6"
+		
 		test ":spock:0.6-groovy-1.8-SNAPSHOT"
 		test ":geb:0.5.1"
 		
