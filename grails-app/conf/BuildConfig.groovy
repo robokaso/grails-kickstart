@@ -18,7 +18,7 @@ grails.project.dependency.resolution = {
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         //mavenCentral()
-        //mavenLocal()
+        mavenLocal()
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -34,7 +34,14 @@ grails.project.dependency.resolution = {
         compile ":hibernate:$grailsVersion"
         compile ":jquery:1.6.1.1"
         compile ":resources:1.0"
+		compile ":joda-time:1.2"
 
+		runtime ":class-diagram:0.5.2"
+		runtime ":jquery-ui:1.8.11"
+		
+		test ":spock:0.6-groovy-1.8-SNAPSHOT"
+		
         build ":tomcat:$grailsVersion"
+		
     }
 }

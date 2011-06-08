@@ -6,12 +6,17 @@ import org.joda.time.*
 
 import spock.lang.Specification
 
+/**
+ * Mocking persistence of Joda classes in unit tests.
+ * 
+ * @author Robert Kasanicky
+ */
 @Mock(Joda)
 class JodaSpec extends Specification {
 
 	Joda joda = new Joda()
 	
-	def 'mocking joda time'() {
+	def 'mocking joda-time'() {
 		
 		setup: 'set joda-time attributes'
 			joda.with {

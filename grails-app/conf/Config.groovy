@@ -1,9 +1,9 @@
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
-grails.config.locations = [ "classpath:${appName}-config.properties",
-                             "classpath:${appName}-config.groovy",
-                             "file:${userHome}/.grails/${appName}-config.properties",
+grails.config.locations = [ //"classpath:${appName}-config.properties",
+                             //"classpath:${appName}-config.groovy",
+                             //"file:${userHome}/.grails/${appName}-config.properties",
                              "file:${userHome}/.grails/${appName}-config.groovy"]
 
 // if(System.properties["${appName}.config.location"]) {
@@ -94,7 +94,10 @@ grails.gorm.default.mapping = {
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentDateTime, class: org.joda.time.DateTime
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentDuration, class: org.joda.time.Duration
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentInstant, class: org.joda.time.Instant
-	"user-type" type: org.joda.time.contrib.hibernate.PersistentInterval, class: org.joda.time.Interval
+	
+//	FIXME http://jira.grails.org/browse/GPJODATIME-10
+//	"user-type" type: org.joda.time.contrib.hibernate.PersistentInterval, class: org.joda.time.Interval
+	
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalDate, class: org.joda.time.LocalDate
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalTimeAsString, class: org.joda.time.LocalTime
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalDateTime, class: org.joda.time.LocalDateTime
