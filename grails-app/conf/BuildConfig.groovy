@@ -46,6 +46,8 @@ grails.project.dependency.resolution = {
 		
 //		FIXME http://jira.grails.org/browse/GPFIXTURES-19
 //		runtime ":fixtures:1.0.6"
+		
+//		FIXME http://jira.grails.org/browse/GPCONSOLE-2
 		runtime ":console:1.0.1"
 		
 		test ":spock:0.6-groovy-1.8-SNAPSHOT"
