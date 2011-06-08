@@ -49,8 +49,32 @@ grails.project.dependency.resolution = {
 		
 		test ":spock:0.6-groovy-1.8-SNAPSHOT"
 		test ":geb:0.5.1"
+		test ":code-coverage:1.2.4"
 		
         build ":tomcat:$grailsVersion"
 		
     }
+}
+
+coverage {
+	enabledByDefault = false
+	nopost = true
+	xml = true
+	exclusions = [
+			'**/*plugin*/**',
+			'**/grails/**',
+			'**/junit/**',
+			'**/com/**',
+			'**/org/**',
+			'**/scheduledjobs/**',
+			'*Config*',
+			'*Codec*',
+			'*Diagram*',
+			'*Builder*',
+			'*Searchable*',
+			'*Nimble*',
+			'*Shiro*',
+			'*TagLib*',
+			'JQuery*',
+	]
 }
