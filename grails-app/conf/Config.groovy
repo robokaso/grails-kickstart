@@ -10,6 +10,9 @@ grails.config.locations = [ //"classpath:${appName}-config.properties",
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
+// get rid of the appName in URL
+// grails.app.context = '/'
+
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
@@ -102,4 +105,31 @@ grails.gorm.default.mapping = {
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalTimeAsString, class: org.joda.time.LocalTime
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalDateTime, class: org.joda.time.LocalDateTime
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentPeriod, class: org.joda.time.Period
+}
+
+graphviz {
+	dot.executable = "/usr/bin/dot" 
+}
+
+classDiagram {
+	preferences {
+		defaults {
+			// Defaults used in preferences form.
+			skin = "regular"
+			outputFormat = "png"    // Should be an image format from http://www.graphviz.org/doc/info/output.html
+			showProperties = true
+			showMethods = false
+			showAssociationNames = false
+			showMethodReturnType = true
+			showMethodSignature = true
+			showPropertyType = true
+			showEmbeddedAsProperty = false
+			showPackages = true
+			autoUpdate = true
+			classSelection = "<all>"
+			classSelectionIsRegexp = false
+			graphOrientation = "TB" // See http://www.graphviz.org/doc/info/attrs.html#k:rankdir for valid values
+			fontsize = 9
+		}
+	}
 }
