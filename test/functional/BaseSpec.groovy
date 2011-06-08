@@ -13,7 +13,7 @@ abstract class BaseSpec extends GebSpec{
 	 */
 	@Override
 	String getBaseUrl() {
-		'http://localhost:8080/grails-boilerplate'
+		'http://localhost:8080'
 	}
 	
 	def setup() {
