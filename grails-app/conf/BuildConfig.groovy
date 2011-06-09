@@ -32,6 +32,11 @@ grails.project.dependency.resolution = {
 		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.0b3") {
 			exclude 'xml-apis'
 		}
+		
+		//see http://jira.grails.org/browse/GPJODATIME-10
+		compile("joda-time:joda-time-hibernate:1.3") {
+			excludes "joda-time", "hibernate"
+		}
     }
 
     plugins {
@@ -39,7 +44,10 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.6.1.1"
 //		compile ":jquery-ui:1.8.11"
         compile ":resources:1.0"
-		compile ":joda-time:1.2"
+		compile(":joda-time:1.2") {
+				//see http://jira.grails.org/browse/GPJODATIME-10
+				excludes "joda-time-hibernate"
+		}
 
 //		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
 		compile ":class-diagram:0.5.2"
