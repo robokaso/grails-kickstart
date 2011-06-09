@@ -42,7 +42,7 @@ grails.project.dependency.resolution = {
     plugins {
         compile ":hibernate:$grailsVersion"
         compile ":jquery:1.6.1.1"
-//		compile ":jquery-ui:1.8.11"
+		compile ":jquery-ui:1.8.11"
         compile ":resources:1.0"
 		compile(":joda-time:1.2") {
 				//see http://jira.grails.org/browse/GPJODATIME-10
@@ -57,6 +57,7 @@ grails.project.dependency.resolution = {
 		
 //		FIXME http://jira.grails.org/browse/GPCONSOLE-2
 		runtime ":console:1.0.1"
+		runtime ":grails-melody:1.5"
 		
 		test ":spock:0.6-groovy-1.8-SNAPSHOT"
 		test ":geb:0.5.1"

@@ -1,4 +1,3 @@
-
 /**
  * Makes sure the app started up successfully.
  * 

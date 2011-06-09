@@ -6,8 +6,8 @@ While the choices made are inevitably opinionated the project should still be ge
 * for beginners as a rich set of sensible defaults
 * for advanced users as a concrete basis for discussing/reevaluating the choices made and pointing out
 	additional plugins with orthogonal functionalities that improve the overall works-out-of-box experience.
-* as an integration test proving that a rich set of generally useful plugins can live together nicely or point
-	out the problems in case they don't
+* as an integration test proving that the chosen set of generally useful plugins work together nicely or 
+	showcase the necessary workarounds in case they don't
   
 
 <h2>Known issues</h2>
