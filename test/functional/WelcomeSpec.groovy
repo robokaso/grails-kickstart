@@ -1,13 +1,18 @@
+import geb.spock.GebSpec
+
 /**
  * Makes sure the app started up successfully.
  * 
  * @author Robert Kasanicky
  */
-class WelcomeSpec extends BaseSpec {
+class WelcomeSpec extends GebSpec {
 
 	def 'ping index'() {
 		
-		expect:
+		when:
+			go()
+			
+		then:
 			$('title').text() == 'Welcome to Grails'
 	}
 }

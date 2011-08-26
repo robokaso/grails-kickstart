@@ -1,18 +1,18 @@
+import geb.spock.GebSpec
 
 /**
  * Checks JavaMelody monitoring is in place.
  * 
  * @author Robert Kasanicky
  */
-class MonitoringSpec extends BaseSpec {
+class MonitoringSpec extends GebSpec {
 
-	@Override
-	String getBaseUrl() {
-		super.getBaseUrl() + '/monitoring'
-	}
-	
 	def 'ping the monitoring page'() {
-		expect:
+		
+		when:
+			go('/monitoring')
+			
+		then:
 			$('title').text().startsWith('Monitoring JavaMelody')
 	}
 	

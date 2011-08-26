@@ -1,18 +1,19 @@
+import geb.spock.GebSpec
+
 /**
  * Checks the grails console is accessible.
  * 
  * @author Robert Kasanicky
  */
-class ConsoleSpec extends BaseSpec {
+class ConsoleSpec extends GebSpec {
 	
-	@Override
-	String getBaseUrl() {
-		super.getBaseUrl() + '/console' 
-	}
 	
 	def 'ping console'() {
 		
-		expect:
+		when:
+			go('/console')
+			
+		then:
 			$('title').text() == 'Grails Console'	
 	}
 

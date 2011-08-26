@@ -17,8 +17,8 @@ grails.project.dependency.resolution = {
 
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
-        //mavenCentral()
         mavenLocal()
+        mavenCentral()
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -29,21 +29,23 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.5'
 		
-		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.0b3") {
+		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.5.0") {
 			exclude 'xml-apis'
 		}
+		test "org.codehaus.geb:geb-spock:0.6.0"
 		
 		//see http://jira.grails.org/browse/GPJODATIME-10
 		compile("joda-time:joda-time-hibernate:1.3") {
 			excludes "joda-time", "hibernate"
 		}
+		
     }
 
     plugins {
         compile ":hibernate:$grailsVersion"
         compile ":jquery:1.6.1.1"
-		compile ":jquery-ui:1.8.11"
-        compile ":resources:1.0"
+		compile ":jquery-ui:1.8.15"
+        compile ":resources:1.0.2"
 		compile(":joda-time:1.2") {
 				//see http://jira.grails.org/browse/GPJODATIME-10
 				excludes "joda-time-hibernate"
@@ -57,15 +59,13 @@ grails.project.dependency.resolution = {
 		
 //		FIXME http://jira.grails.org/browse/GPCONSOLE-2
 		runtime ":console:1.0.1"
-		runtime ":grails-melody:1.5"
+		runtime ":grails-melody:1.7"
 		
-		test ":spock:0.6-groovy-1.8-SNAPSHOT"
-		test ":geb:0.5.1"
+		test ":spock:0.6-SNAPSHOT"
+		test ":geb:0.6.0"
 		test ":code-coverage:1.2.4"
 		
-		
-//		FIXME http://jira.grails.org/browse/GPCODENARC-15
-//		build ":codenarc:0.12"
+		build ":codenarc:0.15"
 		
 		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
