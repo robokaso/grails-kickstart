@@ -24,6 +24,8 @@ While the choices made are inevitably opinionated the project should still be ge
 
 <h2>TODO</h2>
 * security + user admin UI
-* nice scaffolding UI (perhaps grails will take care) + Joda support
-* coffeescript support
+* nice scaffolding UI (perhaps grails will take care) with integrated Joda support
+* coffeescript 
+* UI widgets
 * CI + deployment - is there a good way to make the configs public & kept up-to-date automatically?
+* sensible default imports for grails console
