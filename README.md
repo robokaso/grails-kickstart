@@ -1,6 +1,6 @@
 <h2>WARNING</h2>
 
-This projects targets Grails 1.4 which is under development, don't use this for anything serious just yet.
+This projects targets Grails 2.0 which is under development, don't use this for anything serious just yet.
 
 Anyway take a look at the <code>BuildConfig.groovy</code> for an inspiration about which plugins you may want to
 consider using and how to configure them in <code>Config.groovy</code>.
@@ -24,6 +24,6 @@ While the choices made are inevitably opinionated the project should still be ge
 
 <h2>TODO</h2>
 * security + user admin UI
-* nice scaffolding UI (perhaps grails 1.4 + enhanced scaffolding plugin will take care) + Joda support
+* nice scaffolding UI (perhaps grails will take care) + Joda support
 * coffeescript support
 * CI + deployment - is there a good way to make the configs public & kept up-to-date automatically?

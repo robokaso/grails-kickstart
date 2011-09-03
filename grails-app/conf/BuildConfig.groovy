@@ -50,9 +50,6 @@ grails.project.dependency.resolution = {
 				//see http://jira.grails.org/browse/GPJODATIME-10
 				excludes "joda-time-hibernate"
 		}
-		compile ":shiro:1.1.3"
-		compile ":shiro-ui:1.0-beta4"
-		compile ":mail:1.0-SNAPSHOT"
 
 //		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
 		compile ":class-diagram:0.5.2"
