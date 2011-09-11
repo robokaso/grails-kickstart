@@ -52,7 +52,9 @@ grails.project.dependency.resolution = {
 				//see http://jira.grails.org/browse/GPJODATIME-10
 				excludes "joda-time-hibernate"
 		}
+		
 //		TODO
+//		compile ":taxonomy:1.1"
 //		compile ":coffeescript-resources:0.2"
 
 //		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
