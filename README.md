@@ -17,13 +17,7 @@ While the choices made are inevitably opinionated the project should still be ge
 * as an integration test proving that the chosen set of plugins works together nicely or 
 	showcase the necessary workarounds in case it doesn't
 
-<h2>Known issues</h2>
-
-* [Spock dependency error](http://jira.grails.org/browse/GPSPOCK-2?focusedCommentId=64393&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-64393)
-* [Class diagram doesn't show correctly](http://jira.grails.org/browse/GPCLASSDIAGRAM-16)
-
 <h2>TODO</h2>
-* security + user admin UI
 * nice scaffolding UI (perhaps grails will take care) with integrated Joda support
 * coffeescript 
 * UI widgets

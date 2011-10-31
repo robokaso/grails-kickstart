@@ -1,11 +1,10 @@
-import geb.spock.GebSpec
 
 /**
  * Checks JavaMelody monitoring is in place.
  * 
  * @author Robert Kasanicky
  */
-class MonitoringSpec extends GebSpec {
+class MonitoringSpec extends GebWorkaroundSpec {
 
 	def 'ping the monitoring page'() {
 		

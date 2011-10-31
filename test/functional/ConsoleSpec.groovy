@@ -1,11 +1,10 @@
-import geb.spock.GebSpec
 
 /**
  * Checks the grails console is accessible.
  * 
  * @author Robert Kasanicky
  */
-class ConsoleSpec extends GebSpec {
+class ConsoleSpec extends GebWorkaroundSpec {
 	
 	
 	def 'ping console'() {
