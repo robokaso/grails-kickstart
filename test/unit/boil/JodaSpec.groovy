@@ -1,7 +1,5 @@
 package boil
 
-import grails.test.mixin.*
-
 import org.joda.time.*
 
 import spock.lang.Specification
