@@ -27,11 +27,11 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-        // runtime 'mysql:mysql-connector-java:5.1.5'
+		final SELENIUM_VERSION = "2.15.0"
+		test "org.seleniumhq.selenium:selenium-support:$SELENIUM_VERSION"
+		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
+//		test("org.seleniumhq.selenium:selenium-chrome-driver:$SELENIUM_VERSION")
 		
-		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.15.0") {
-			exclude 'xml-apis'
-		}
 		test "org.codehaus.geb:geb-spock:0.6.1"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
@@ -39,7 +39,6 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":hibernate:$grailsVersion"
         compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
 //		TODO
@@ -54,6 +53,7 @@ grails.project.dependency.resolution = {
 //		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
 //		compile ":class-diagram:0.5.2"
 		
+        runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.0.1"
 		runtime ":fixtures:1.1"
 		runtime ":grails-melody:1.10"
@@ -63,7 +63,6 @@ grails.project.dependency.resolution = {
 		test ":code-coverage:1.2.5"
 		
 		build ":codenarc:0.15"
-		
 		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 		
