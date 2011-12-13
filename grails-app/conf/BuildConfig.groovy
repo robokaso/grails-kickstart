@@ -39,14 +39,15 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+        compile ":resources:1.1.5"
         compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
-//		TODO
-//		compile ":jquery-ui-widget:0.1.3"
-        compile ":resources:1.1.5"
 		compile ":joda-time:1.3"
 		
-//		TODO
+//		TODO try out
+//		compile ":less-resources:0.6.1
+//		compile ":twitter-bootstrap:1.4.0.12"
+//		compile ":jquery-ui-widget:0.1.3"
 //		compile ":taxonomy:1.1"
 //		compile ":coffeescript-resources:0.2"
 
