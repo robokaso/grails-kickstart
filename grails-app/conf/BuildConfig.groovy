@@ -29,29 +29,23 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.5'
 		
-		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.9.0") {
+		test("org.seleniumhq.selenium:selenium-htmlunit-driver:2.15.0") {
 			exclude 'xml-apis'
 		}
 		test "org.codehaus.geb:geb-spock:0.6.1"
 		
-		//see http://jira.grails.org/browse/GPJODATIME-10
-		compile("joda-time:joda-time-hibernate:1.3") {
-			excludes "joda-time", "hibernate"
-		}
+		compile "org.jadira.usertype:usertype.jodatime:1.9"
 		
     }
 
     plugins {
         compile ":hibernate:$grailsVersion"
-        compile ":jquery:1.6.1.1"
+        compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
 //		TODO
 //		compile ":jquery-ui-widget:0.1.3"
-        compile ":resources:1.1.1"
-		compile(":joda-time:1.2") {
-				//see http://jira.grails.org/browse/GPJODATIME-10
-				excludes "joda-time-hibernate"
-		}
+        compile ":resources:1.1.5"
+		compile ":joda-time:1.3"
 		
 //		TODO
 //		compile ":taxonomy:1.1"
@@ -61,12 +55,12 @@ grails.project.dependency.resolution = {
 //		compile ":class-diagram:0.5.2"
 		
 		runtime ":console:1.0.1"
-		runtime ":fixtures:1.0.7"
-		runtime ":grails-melody:1.9"
+		runtime ":fixtures:1.1"
+		runtime ":grails-melody:1.10"
 		
 		test ":spock:0.6-SNAPSHOT"
 		test ":geb:0.6.1"
-		test ":code-coverage:1.2.4"
+		test ":code-coverage:1.2.5"
 		
 		build ":codenarc:0.15"
 		
