@@ -39,7 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":resources:1.1.5"
+        compile ":resources:1.1.6"
         compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
 		compile ":joda-time:1.3"
@@ -63,7 +63,7 @@ grails.project.dependency.resolution = {
 		test ":geb:0.6.1"
 		test ":code-coverage:1.2.5"
 		
-		build ":codenarc:0.15"
+		build ":codenarc:0.16.1"
 		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 		
