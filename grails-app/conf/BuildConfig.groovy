@@ -66,6 +66,7 @@ grails.project.dependency.resolution = {
 		test ":spock:0.6-SNAPSHOT"
 		test ":geb:0.6.1"
 		test ":code-coverage:1.2.5"
+		test ':functional-test-development:0.2'
 		
 		build ":codenarc:0.16.1"
 		build ":eclipse-scripts:1.0.5"
