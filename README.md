@@ -17,9 +17,11 @@ While the choices made are inevitably opinionated the project should still be ge
 * as an integration test proving that the chosen set of plugins works together nicely or 
 	showcase the necessary workarounds in case it doesn't
 
-<h2>TODO</h2>
-* nice scaffolding UI (perhaps grails will take care) with integrated Joda support
+<h2>TODO (in no particular order</h2>
+* look & feel - based on Twitter bootstrap perhaps
 * coffeescript 
 * UI widgets
-* CI + deployment - is there a good way to make the configs public & kept up-to-date automatically?
+* CI + deployment - is there a good way to make the jenkins configs and deployment scripts public & kept up-to-date automatically?
 * sensible default imports for grails console
+* out-of-box user mgmt UI (with support for disabling users)
+* Less CSS

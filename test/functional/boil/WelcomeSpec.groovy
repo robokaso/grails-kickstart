@@ -1,3 +1,6 @@
+package boil
+
+import boil.support.GebWorkaroundSpec
 
 /**
  * Makes sure the app started up successfully.

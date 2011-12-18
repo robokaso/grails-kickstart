@@ -44,6 +44,10 @@ grails.project.dependency.resolution = {
 		compile ":jquery-ui:1.8.15"
 		compile ":joda-time:1.3"
 		
+		// why Shiro rather than Spring Security 
+		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
+		compile ":shiro:1.1.3" 
+		
 //		TODO try out
 //		compile ":less-resources:0.6.1
 //		compile ":twitter-bootstrap:1.4.0.12"

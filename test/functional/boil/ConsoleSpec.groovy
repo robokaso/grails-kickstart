@@ -1,10 +1,13 @@
+package boil
+
+import boil.support.AuthenticatedSpec
 
 /**
  * Checks the grails console is accessible.
  * 
  * @author Robert Kasanicky
  */
-class ConsoleSpec extends GebWorkaroundSpec {
+class ConsoleSpec extends AuthenticatedSpec {
 	
 	
 	def 'ping console'() {

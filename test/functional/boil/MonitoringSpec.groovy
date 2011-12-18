@@ -1,10 +1,13 @@
+package boil
+
+import boil.support.AuthenticatedSpec
 
 /**
  * Checks JavaMelody monitoring is in place.
  * 
  * @author Robert Kasanicky
  */
-class MonitoringSpec extends GebWorkaroundSpec {
+class MonitoringSpec extends AuthenticatedSpec {
 
 	def 'ping the monitoring page'() {
 		

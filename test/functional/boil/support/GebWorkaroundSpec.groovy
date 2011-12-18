@@ -1,3 +1,4 @@
+package boil.support
 
 /* Copyright 2009 the original author or authors.
  *
