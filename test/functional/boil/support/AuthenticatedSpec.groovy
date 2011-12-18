@@ -19,7 +19,7 @@ class AuthenticatedSpec extends GebWorkaroundSpec {
 		form.password = 'test'
 
 		$('input', type: 'submit').click()
-		assert $('title').text() =~ "Grails"
+		assert $('title').text() =~ "grails"
 	}
 
 	def cleanup() {
