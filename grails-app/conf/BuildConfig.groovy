@@ -40,13 +40,17 @@ grails.project.dependency.resolution = {
 
     plugins {
         compile ":resources:1.1.6"
+		compile ':cached-resources:1.0'
+		compile ':zipped-resources:1.0'
+		compile ':cache-headers:1.1.5'
+		
         compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
-		compile ":joda-time:1.3"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
 		compile ":shiro:1.1.3" 
+		compile ":joda-time:1.3"
 		
 //		TODO try out
 //		compile ":less-resources:0.6.1
