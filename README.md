@@ -10,7 +10,7 @@ While the choices made are inevitably opinionated the project should still be ge
 * as an integration test proving that the chosen set of plugins works together nicely or 
 	showcase the necessary workarounds in case it doesn't
 
-<h2>TODO (in no particular order</h2>
+<h2>TODO (in no particular order)</h2>
 * look & feel - based on Twitter bootstrap perhaps
 * coffeescript 
 * UI widgets
