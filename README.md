@@ -20,14 +20,3 @@ License
 WARNING
 -------
 This is a work in progress at an early stage of development.
-
-
-TODO (in no particular order)
------------------------------
-* look & feel - based on Twitter bootstrap perhaps
-* UI widgets
-* CI + deployment - is there a good way to make the jenkins configs and deployment scripts public & kept up-to-date automatically?
-* sensible default imports for grails console
-* user mgmt UI 
-* Less CSS
-* test parallelization
