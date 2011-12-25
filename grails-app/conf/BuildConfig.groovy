@@ -24,15 +24,17 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
+	
+	final GEB_VERSION = "0.6.2"
+	final SELENIUM_VERSION = "2.15.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-		final SELENIUM_VERSION = "2.15.0"
 		test "org.seleniumhq.selenium:selenium-support:$SELENIUM_VERSION"
 		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
 //		test("org.seleniumhq.selenium:selenium-chrome-driver:$SELENIUM_VERSION")
 		
-		test "org.codehaus.geb:geb-spock:0.6.1"
+		test "org.codehaus.geb:geb-spock:$GEB_VERSION"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
 		
@@ -69,7 +71,7 @@ grails.project.dependency.resolution = {
 		runtime ":grails-melody:1.10"
 		
 		test ":spock:0.6-SNAPSHOT"
-		test ":geb:0.6.2"
+		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.2'
 		
