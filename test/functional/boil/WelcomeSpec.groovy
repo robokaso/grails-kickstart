@@ -15,6 +15,6 @@ class WelcomeSpec extends GebWorkaroundSpec {
 			go()
 			
 		then:
-			$('title').text() == 'grails-boilerplate'
+			$('title').text() == 'grails-kickstart'
 	}
 }
