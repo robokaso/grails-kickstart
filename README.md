@@ -20,3 +20,7 @@ License
 WARNING
 -------
 This is a work in progress at an early stage of development.
+
+CI
+--
+Thanks to [Cloudbees](http://cloudbees.com) this project has a public Jenkins build [here](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/).
