@@ -12,6 +12,7 @@ grails.config.locations = [ //"classpath:${appName}-config.properties",
 
 // get rid of the appName in URL
 grails.app.context = '/'
+grails.web.url.converter = 'hyphenated'
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
