@@ -12,8 +12,8 @@
 	          <a class="brand" href="/"><g:meta name="app.name" /></a>
 	          <ul class="nav">
 	            <li class="active"><a href="#">Home</a></li>
-	            <li><a href="#about">About</a></li>
-	            <li><a href="#contact">Contact</a></li>
+	            <li><a href="https://github.com/robokaso/grails-kickstart#readme">About</a></li>
+	            <li><a href="https://github.com/robokaso">Contact</a></li>
 	          </ul>
 	          <p class="pull-right">
 	          	<shiro:isLoggedIn>
@@ -38,7 +38,6 @@
 				</ul>
 				<h5>Application status</h5>
 				<ul>
-					<li>App version: <g:meta name="app.version"/></li>
 					<li>Grails version: <g:meta name="app.grails.version"/></li>
 					<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
 					<li>JVM version: ${System.getProperty('java.version')}</li>
@@ -54,19 +53,14 @@
 		
 			<article class="hero-unit">
 				<h1>Welcome to Grails Kickstart</h1>
+				<br/>
 				<p>Valid credentials are <strong>super/test</strong></p>
-	
-				<div id="controller-list" role="navigation">
-					<h2>Available Controllers:</h2>
-					<ul>
-						<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.name } }">
-							<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.name}</g:link></li>
-						</g:each>
-					</ul>
-				</div>
+				<p>Check the source code on <a href="https://github.com/robokaso/grails-kickstart">Github</a></p>
+				<p>Check the build status on <a href="https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/">Cloudbees</a></p>
 			</article>
+	
 		
-			<footer>@Copy Left Right Up Down, Build: <g:meta name="build.id" /></footer>
+			<footer>Build: <g:meta name="build.id" /></footer>
 		</section>
 	</div>
 	

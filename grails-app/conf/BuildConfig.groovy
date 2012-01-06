@@ -51,6 +51,7 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.7.1"
 		compile ":jquery-ui:1.8.15"
 		
+		//causes trouble on the build server due to dependency resolution timeouts
 //		compile ":lesscss-resources:0.6.1"
 		compile ":twitter-bootstrap:1.4.0.14"
 		
