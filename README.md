@@ -21,6 +21,6 @@ WARNING
 -------
 This is a work in progress at an early stage of development.
 
-CI
---
-Thanks to [Cloudbees](http://cloudbees.com) this project has a public Jenkins build [here](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/).
+CI & Demo
+---------
+Thanks to [Cloudbees](http://cloudbees.com) this project has a [public Jenkins build](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/) and [online demo](http://kickstart.robokasofoss.cloudbees.net/).
