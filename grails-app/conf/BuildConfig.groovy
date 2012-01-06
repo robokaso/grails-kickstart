@@ -30,8 +30,10 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
+		// using HTMLunit instead of real-world browser due to build server limitations
+		test("org.seleniumhq.selenium:selenium-htmlunit-driver:$SELENIUM_VERSION") 
 		test "org.seleniumhq.selenium:selenium-support:$SELENIUM_VERSION"
-		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
+//		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
 //		test("org.seleniumhq.selenium:selenium-chrome-driver:$SELENIUM_VERSION")
 		
 		test "org.codehaus.geb:geb-spock:$GEB_VERSION"
@@ -105,5 +107,14 @@ coverage {
 			'*Shiro*',
 			'*TagLib*',
 			'JQuery*',
+			'*Resources*',
+			'changelog*',
+			'0*', //database migrations
 	]
+}
+
+codenarc {
+	//switch to xml format once Jenkins Violations don't throw exceptions on the output
+	reportType = 'xml'
+	reportName = 'target/codenarc.xml'
 }
