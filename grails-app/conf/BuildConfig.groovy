@@ -63,6 +63,8 @@ grails.project.dependency.resolution = {
 		compile ':cloud-support:1.0.8'
 		compile ':cloud-foundry:1.2.1'
 		
+		compile ':fields:1.0-SNAPSHOT'
+		
 //		TODO try out
 //		compile ":jquery-ui-widget:0.1.3"
 //		compile ":taxonomy:1.1"
