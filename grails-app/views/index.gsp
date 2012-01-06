@@ -69,7 +69,7 @@
 				</div>
 			</article>
 		
-			<footer>@Copy Left Right Up Down</footer>
+			<footer>@Copy Left Right Up Down, Build: <g:meta name="build.id" /></footer>
 		</section>
 	</div>
 	
