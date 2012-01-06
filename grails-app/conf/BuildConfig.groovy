@@ -26,7 +26,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.6.2"
-	final SELENIUM_VERSION = "2.15.0"
+	final SELENIUM_VERSION = "2.16.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -50,12 +50,15 @@ grails.project.dependency.resolution = {
 		compile ":jquery-ui:1.8.15"
 		
 		compile ":lesscss-resources:0.6.1"
-		compile ":twitter-bootstrap:1.4.0.13"
+		compile ":twitter-bootstrap:1.4.0.14"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
 		compile ":shiro:1.1.3" 
 		compile ":joda-time:1.3.1"
+		
+		compile ':cloud-support:1.0.8'
+		compile ':cloud-foundry:1.2.1'
 		
 //		TODO try out
 //		compile ":jquery-ui-widget:0.1.3"

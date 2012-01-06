@@ -14,6 +14,10 @@ grails.config.locations = [ //"classpath:${appName}-config.properties",
 grails.app.context = '/'
 grails.web.url.converter = 'hyphenated'
 
+grails.plugin.cloudfoundry.username = '' //overriden in local config file
+grails.plugin.cloudfoundry.password = '' //overriden in local config file
+grails.plugin.cloudfoundry.appname = 'kickstart'
+
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
@@ -58,7 +62,7 @@ grails.exceptionresolver.params.exclude = ['password']
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
-        grails.serverURL = "http://www.changeme.com"
+        grails.serverURL = "http://kickstart.cloudfoundry.com"
     }
     development {
         grails.serverURL = "http://localhost:8080"
