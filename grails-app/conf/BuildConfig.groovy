@@ -26,7 +26,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.6.2"
-	final SELENIUM_VERSION = "2.16.0"
+	final SELENIUM_VERSION = "2.16.1"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -43,6 +43,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+		
         compile ":resources:1.1.6"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
