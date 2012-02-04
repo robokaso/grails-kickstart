@@ -50,11 +50,10 @@ grails.project.dependency.resolution = {
 		compile ':cache-headers:1.1.5'
 		
         compile ":jquery:1.7.1"
-		compile ":jquery-ui:1.8.15"
 		
 		//causes trouble on the build server due to dependency resolution timeouts
 //		compile ":lesscss-resources:0.6.1"
-		compile ":twitter-bootstrap:1.4.0.14"
+		compile ":twitter-bootstrap:2.0.0.16"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -64,8 +63,10 @@ grails.project.dependency.resolution = {
 		compile ':cloud-support:1.0.8'
 		compile ':cloud-foundry:1.2.1'
 		
-		compile ':fields:1.0-SNAPSHOT'
+		compile ':fields:1.0.1'
 		
+//		TODO CSS compatibility with Twitter Bootstrap	
+//		compile ":jquery-ui:1.8.15"
 //		TODO try out
 //		compile ":jquery-ui-widget:0.1.3"
 //		compile ":taxonomy:1.1"
