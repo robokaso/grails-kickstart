@@ -1,28 +1,78 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
-		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
-		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
-		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
-		
-		<r:require module="bootstrap" />
-		<g:layoutHead/>
-	</head>
-	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:layoutBody/>
-		<div class="footer" role="contentinfo">Build: <g:meta name="build.id" /></div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-		<g:javascript library="application"/>
-	</body>
+<html>
+<head>
+<title><g:layoutTitle default="${meta(name: 'app.name') }"/></title>
+<meta name="layout" content="main" />
+<r:require module="scaffolding" />
+<r:layoutResources />
+<g:layoutHead/>
+</head>
+
+<body>
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="/"><g:meta name="app.name" /></a>
+				<div class="nav-collapse">
+
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a
+							href="https://github.com/robokaso/grails-kickstart#readme">About</a></li>
+						<li><a href="https://github.com/robokaso">Contact</a></li>
+					</ul>
+					<p class="navbar-text pull-right">
+						<shiro:isLoggedIn>
+		         		Logged in as <g:link controller="user" action="profile">
+								<shiro:principal />
+							</g:link> &nbsp; &nbsp;
+		         		<g:link controller="auth" action="signOut">Logout</g:link>
+						</shiro:isLoggedIn>
+						<shiro:notUser>
+							<g:link controller="auth" action="login">Login</g:link>
+						</shiro:notUser>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<section class="span3">
+				<nav class="well sidebar-nav">
+					<h5>Admin</h5>
+					<ul>
+						<li><g:link elementId="monitoring" controller="monitoring">Monitoring</g:link></li>
+						<li><g:link elementId="console" controller="console">Console</g:link></li>
+					</ul>
+					<h5>Application status</h5>
+					<ul>
+						<li>Grails version: <g:meta name="app.grails.version" /></li>
+						<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
+						<li>JVM version: ${System.getProperty('java.version')}</li>
+						<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
+						<li>Domains: ${grailsApplication.domainClasses.size()}</li>
+						<li>Services: ${grailsApplication.serviceClasses.size()}</li>
+						<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="span9">
+				<g:layoutBody/>
+			</section>
+		</div>
+
+		<hr />
+		<footer>
+			Build:
+			<g:meta name="build.id" />
+		</footer>
+	</div>
+
+	<r:layoutResources />
+</body>
+
 </html>
