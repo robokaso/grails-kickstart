@@ -63,7 +63,7 @@ grails.project.dependency.resolution = {
 		compile ':cloud-support:1.0.8'
 		compile ':cloud-foundry:1.2.1'
 		
-		compile ':fields:1.0.1'
+		compile ':fields:1.0.4'
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
 //		compile ":jquery-ui:1.8.15"
@@ -76,7 +76,7 @@ grails.project.dependency.resolution = {
 //		compile ":class-diagram:0.5.2"
 		
         runtime ":hibernate:$grailsVersion"
-		runtime ":console:1.0.1"
+		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
 		runtime ":grails-melody:1.11"
 		
