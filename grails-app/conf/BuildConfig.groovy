@@ -81,7 +81,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
-//		runtime ":build-test-data:2.0.0"
+		runtime ":build-test-data:2.0.0"
 		runtime ":grails-melody:1.11"
 		runtime ":runtime-logging:0.4"
 		
