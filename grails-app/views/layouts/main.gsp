@@ -47,6 +47,9 @@
 					<ul>
 						<li><g:link elementId="monitoring" controller="monitoring">Monitoring</g:link></li>
 						<li><g:link elementId="console" controller="console">Console</g:link></li>
+						<%--   
+						<li><g:link elementId="greenmail" controller="greenmail">Greenmail</g:link></li>
+						--%>
 					</ul>
 					<h5>Application status</h5>
 					<ul>

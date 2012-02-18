@@ -52,18 +52,21 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.7.1"
 		
 		//causes trouble on the build server due to dependency resolution timeouts
-//		compile ":lesscss-resources:0.6.1"
+		compile ":lesscss-resources:1.0.1"
 		compile ":twitter-bootstrap:2.0.0.16"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
 		compile ":shiro:1.1.3" 
 		compile ":joda-time:1.3.1"
+		compile ":mail:1.0"
+		compile ":greenmail:1.3.1"
 		
 		compile ':cloud-support:1.0.8'
 		compile ':cloud-foundry:1.2.1'
 		
 		compile ':fields:1.0.4'
+		
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
 //		compile ":jquery-ui:1.8.15"
@@ -78,7 +81,9 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
+//		runtime ":build-test-data:2.0.0"
 		runtime ":grails-melody:1.11"
+		runtime ":runtime-logging:0.4"
 		
 		test ":spock:0.6-SNAPSHOT"
 		test ":geb:$GEB_VERSION"
@@ -88,6 +93,7 @@ grails.project.dependency.resolution = {
 		build ":codenarc:0.16.1"
 		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
+		build ":kickstart-with-bootstrap:0.5.6"
 		
     }
 }
