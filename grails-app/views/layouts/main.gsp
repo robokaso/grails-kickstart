@@ -50,6 +50,7 @@
 						<%--   
 						<li><g:link elementId="greenmail" controller="greenmail">Greenmail</g:link></li>
 						--%>
+						<li><g:link elementId="logging" controller="runtimeLogging">Logging</g:link></li>
 					</ul>
 					<h5>Application status</h5>
 					<ul>
