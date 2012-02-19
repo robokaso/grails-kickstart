@@ -32,10 +32,8 @@ environments {
 	// Cloud Foundry
 	cf {
 		dataSource {
-            dbCreate = "create-drop"
-			driverClassName = "org.postgresql.Driver"
-			dialect = net.sf.hibernate.dialect.PostgreSQLDialect
-			url = ""
+            dbCreate = "update"
+            url = "jdbc:h2:mem:cfDb"
 		}
 	}
 }

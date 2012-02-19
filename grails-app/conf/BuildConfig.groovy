@@ -40,8 +40,6 @@ grails.project.dependency.resolution = {
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
 		
-		runtime "postgresql:postgresql:9.0-801.jdbc4"
-		
     }
 
     plugins {
