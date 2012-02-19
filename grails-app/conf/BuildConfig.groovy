@@ -94,7 +94,6 @@ grails.project.dependency.resolution = {
 		build ":codenarc:0.16.1"
 		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
-		build ":kickstart-with-bootstrap:0.5.6"
 		
     }
 }
