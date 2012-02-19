@@ -18,7 +18,7 @@
 				<div class="nav-collapse">
 
 					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
+						<li class="active"><a href="/">Home</a></li>
 						<li><a
 							href="https://github.com/robokaso/grails-kickstart#readme">About</a></li>
 						<li><a href="https://github.com/robokaso">Contact</a></li>

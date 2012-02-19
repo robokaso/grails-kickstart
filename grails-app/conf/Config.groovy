@@ -16,7 +16,7 @@ grails.web.url.converter = 'hyphenated'
 
 grails.plugin.cloudfoundry.username = '' //overriden in local config file
 grails.plugin.cloudfoundry.password = '' //overriden in local config file
-grails.plugin.cloudfoundry.appname = 'kickstart'
+grails.plugin.cloudfoundry.appname = 'grailskick'
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
@@ -70,6 +70,9 @@ environments {
     test {
         grails.serverURL = "http://localhost:8080"
     }
+	cf {
+        grails.serverURL = "http://grailskick.cloudfoundry.com"
+	}
 
 }
 
@@ -142,3 +145,5 @@ grails.gorm.default.mapping = {
 }
 
 grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
+
+grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']

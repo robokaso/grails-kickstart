@@ -26,7 +26,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.6.2"
-	final SELENIUM_VERSION = "2.16.1"
+	final SELENIUM_VERSION = "2.19.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -39,6 +39,8 @@ grails.project.dependency.resolution = {
 		test "org.codehaus.geb:geb-spock:$GEB_VERSION"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
+		
+		runtime "postgresql:postgresql:9.0-801.jdbc4"
 		
     }
 
@@ -62,7 +64,6 @@ grails.project.dependency.resolution = {
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.1"
 		
-		compile ':cloud-support:1.0.8'
 		compile ':cloud-foundry:1.2.1'
 		
 		compile ':fields:1.0.4'

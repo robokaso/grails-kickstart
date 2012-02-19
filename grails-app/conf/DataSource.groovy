@@ -24,9 +24,18 @@ environments {
         }
     }
     production {
-        dataSource {
-            dbCreate = "update"
-            url = "jdbc:h2:mem:prodDb"
-        }
+		dataSource {
+			jndiName = "java:comp/env/jdbc/grailskick"
+		}
     }
+	
+	// Cloud Foundry
+	cf {
+		dataSource {
+            dbCreate = "create-drop"
+			driverClassName = "org.postgresql.Driver"
+			dialect = net.sf.hibernate.dialect.PostgreSQLDialect
+			url = ""
+		}
+	}
 }
