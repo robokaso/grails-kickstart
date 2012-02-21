@@ -58,7 +58,7 @@ grails.project.dependency.resolution = {
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
 		compile ":shiro:1.1.3" 
-		compile ":joda-time:1.3.1"
+		compile ":joda-time:1.4"
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.1"
 		
