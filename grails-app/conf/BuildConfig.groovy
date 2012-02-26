@@ -88,6 +88,7 @@ grails.project.dependency.resolution = {
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.2'
+		test ':auto-test:1.0'
 		
 		build ":codenarc:0.16.1"
 		build ":eclipse-scripts:1.0.5"
