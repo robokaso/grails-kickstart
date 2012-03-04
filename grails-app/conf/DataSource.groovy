@@ -25,15 +25,12 @@ environments {
     }
     production {
 		dataSource {
-			jndiName = "java:comp/env/jdbc/grailskick"
+            dbCreate = "update"
+            url = "jdbc:h2:mem:prodDb"
 		}
+//		dataSource {
+//			jndiName = "java:comp/env/jdbc/grailskick"
+//		}
     }
 	
-	// Cloud Foundry
-	cf {
-		dataSource {
-            dbCreate = "update"
-            url = "jdbc:h2:mem:cfDb"
-		}
-	}
 }
