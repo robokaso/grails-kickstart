@@ -11,6 +11,7 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
+		
         grailsPlugins()
         grailsHome()
         grailsCentral()
@@ -25,8 +26,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.6.2"
-	final SELENIUM_VERSION = "2.19.0"
+	final GEB_VERSION = "0.6.3"
+	final SELENIUM_VERSION = "2.20.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -53,7 +54,7 @@ grails.project.dependency.resolution = {
 		
 		//causes trouble on the build server due to dependency resolution timeouts
 		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.0.16"
+		compile ":twitter-bootstrap:2.0.1.19"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -81,10 +82,10 @@ grails.project.dependency.resolution = {
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
 		runtime ":build-test-data:2.0.1"
-		runtime ":grails-melody:1.11"
+		runtime ":grails-melody:1.12"
 		runtime ":runtime-logging:0.4"
 		
-		test ":spock:0.6-SNAPSHOT"
+		test ":spock:0.6-rc-1"
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.2'

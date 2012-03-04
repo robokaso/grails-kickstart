@@ -13,7 +13,7 @@ The parameter disabled (false by default) just disables the monitoring.
 //javamelody.disabled = false
 
 /*
-The parameter system-actions-enabled (false by default) enables some system actions.
+The parameter system-actions-enabled (true by default) enables some system actions.
  */
 //javamelody.'system-actions-enabled' = true
 
@@ -29,7 +29,7 @@ javamelody.'displayed-counters' = 'http,sql,error,log,spring,jsp'
 /*
 The parameter url-exclude-pattern is a regular expression to exclude some urls from monitoring as written above.
  */
-//javamelody.'url-exclude-pattern' = '/static/.*'
+javamelody.'url-exclude-pattern' = '/static/.*'
 
 
 
