@@ -61,7 +61,7 @@ grails.project.dependency.resolution = {
 		compile ":shiro:1.1.3" 
 		compile ":joda-time:1.4"
 		compile ":mail:1.0"
-		compile ":greenmail:1.3.1"
+		compile ":greenmail:1.3.2"
 		
 		compile ':cloud-foundry:1.2.1'
 		
@@ -85,7 +85,7 @@ grails.project.dependency.resolution = {
 		runtime ":grails-melody:1.12"
 		runtime ":runtime-logging:0.4"
 		
-		test ":spock:0.6-rc-1"
+		test ":spock:0.6"
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.2'

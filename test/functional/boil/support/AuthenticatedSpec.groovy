@@ -1,12 +1,14 @@
 package boil.support
 
+import geb.spock.GebReportingSpec
+
 /**
  * Handles login & logout routine needed for many test scenarios.
  * 
  * @author Robert Kasanicky
  *
  */
-class AuthenticatedSpec extends GebWorkaroundSpec {
+class AuthenticatedSpec extends GebReportingSpec {
 
 	def setup() {
 		clearCookies()
