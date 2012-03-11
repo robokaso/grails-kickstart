@@ -13,7 +13,7 @@ class SampleRestfulWebserviceSpec extends Specification {
 	def 'sample'() {
 		
 		when:
-			def resp = rest.get('http://localhost:8087')
+			def resp = rest.get('http://localhost:8080')
 
 		then:
 			resp.statusCode == HttpStatus.OK
