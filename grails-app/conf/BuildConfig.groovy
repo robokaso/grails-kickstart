@@ -23,6 +23,7 @@ grails.project.dependency.resolution = {
         // from public Maven repositories
         mavenLocal()
         mavenCentral()
+		mavenRepo "http://maven.jenkins-ci.org/content/repositories/releases/" //jrobin.jar for grails-melody
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -58,6 +59,7 @@ grails.project.dependency.resolution = {
 		//causes trouble on the build server due to dependency resolution timeouts
 		compile ":lesscss-resources:1.0.1"
 		compile ":twitter-bootstrap:2.0.1.21"
+		compile ':fields:1.0.4'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -65,11 +67,11 @@ grails.project.dependency.resolution = {
 		compile ":joda-time:1.4"
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.2"
+		compile ':rest-client-builder:1.0.2'
 		
 		compile ':cloud-foundry:1.2.1'
 		compile ':cloud-support:1.0.9'
 		
-		compile ':fields:1.0.4'
 		
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
