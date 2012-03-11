@@ -3,6 +3,9 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.war.file = "target/kickstart.war"
 
+grails.project.source.level = 1.6
+grails.project.target.level = 1.6
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
@@ -54,7 +57,7 @@ grails.project.dependency.resolution = {
 		
 		//causes trouble on the build server due to dependency resolution timeouts
 		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.1.19"
+		compile ":twitter-bootstrap:2.0.1.21"
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -64,6 +67,7 @@ grails.project.dependency.resolution = {
 		compile ":greenmail:1.3.2"
 		
 		compile ':cloud-foundry:1.2.1'
+		compile ':cloud-support:1.0.9'
 		
 		compile ':fields:1.0.4'
 		
@@ -81,7 +85,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
-		runtime ":build-test-data:2.0.1"
+		runtime ":build-test-data:2.0.2"
 		runtime ":grails-melody:1.12"
 		runtime ":runtime-logging:0.4"
 		
