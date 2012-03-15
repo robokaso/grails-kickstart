@@ -58,8 +58,8 @@ grails.project.dependency.resolution = {
 		
 		//causes trouble on the build server due to dependency resolution timeouts
 		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.1.21"
-		compile ':fields:1.0.4'
+		compile ":twitter-bootstrap:2.0.1.22"
+		compile ':fields:1.1'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
