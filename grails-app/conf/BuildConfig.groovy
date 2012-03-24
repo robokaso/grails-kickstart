@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
         // uncomment to disable ehcache
         // excludes 'ehcache'
     }
-    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "debug" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
 		
         grailsPlugins()
@@ -103,7 +103,7 @@ grails.project.dependency.resolution = {
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.2'
-		test ':auto-test:1.0'
+		test ':auto-test:1.0.1'
 		
 		build ":codenarc:0.16.1"
 //		build ":eclipse-scripts:1.0.5"
