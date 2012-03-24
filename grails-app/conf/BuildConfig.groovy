@@ -45,6 +45,9 @@ grails.project.dependency.resolution = {
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
 		
+		// for heroku 
+		runtime 'postgresql:postgresql:8.4-702.jdbc4'
+		
     }
 
     plugins {
@@ -72,6 +75,11 @@ grails.project.dependency.resolution = {
 		compile ':cloud-foundry:1.2.1'
 		compile ':cloud-support:1.0.9'
 		
+		compile(':heroku:1.0.1') {
+			// only using single heroku instance
+			exclude 'database-session'
+		}
+		
 		
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
@@ -98,7 +106,7 @@ grails.project.dependency.resolution = {
 		test ':auto-test:1.0'
 		
 		build ":codenarc:0.16.1"
-		build ":eclipse-scripts:1.0.5"
+//		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 		
     }
