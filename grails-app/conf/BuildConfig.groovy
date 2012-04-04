@@ -59,14 +59,13 @@ grails.project.dependency.resolution = {
 		
         compile ":jquery:1.7.1"
 		
-		//causes trouble on the build server due to dependency resolution timeouts
 		compile ":lesscss-resources:1.0.1"
 		compile ":twitter-bootstrap:2.0.1.22"
 		compile ':fields:1.1'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
-		compile ":shiro:1.1.3" 
+		compile ":shiro:1.1.4-SNAPSHOT" 
 		compile ":joda-time:1.4"
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.2"
@@ -96,7 +95,7 @@ grails.project.dependency.resolution = {
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
 		runtime ":build-test-data:2.0.2"
-		runtime ":grails-melody:1.12"
+		runtime ":grails-melody:1.13"
 		runtime ":runtime-logging:0.4"
 		
 		test ":spock:0.6"
@@ -105,7 +104,7 @@ grails.project.dependency.resolution = {
 		test ':functional-test-development:0.2'
 		test ':auto-test:1.0.1'
 		
-		build ":codenarc:0.16.1"
+		build ":codenarc:0.17"
 //		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 		
