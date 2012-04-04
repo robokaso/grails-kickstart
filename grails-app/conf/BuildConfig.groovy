@@ -35,7 +35,7 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-		// using HTMLunit instead of real-world browser due to build server limitations
+		// using HTMLunit due to build server limitations, switch to real-world browser if you can
 		test("org.seleniumhq.selenium:selenium-htmlunit-driver:$SELENIUM_VERSION") 
 		test "org.seleniumhq.selenium:selenium-support:$SELENIUM_VERSION"
 //		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
