@@ -30,12 +30,12 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.6.3"
+	final GEB_VERSION = "0.7.0"
 	final SELENIUM_VERSION = "2.20.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
-		// using HTMLunit due to build server limitations, switch to real-world browser if you can
+		// using HTMLunit due to build server limitations, switch to a real-world browser if you can
 		test("org.seleniumhq.selenium:selenium-htmlunit-driver:$SELENIUM_VERSION") 
 		test "org.seleniumhq.selenium:selenium-support:$SELENIUM_VERSION"
 //		test "org.seleniumhq.selenium:selenium-firefox-driver:$SELENIUM_VERSION"
@@ -60,7 +60,7 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.7.1"
 		
 		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.1.22"
+		compile ":twitter-bootstrap:2.0.2.25"
 		compile ':fields:1.1'
 		
 		// why Shiro rather than Spring Security 
