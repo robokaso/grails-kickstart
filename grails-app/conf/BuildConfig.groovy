@@ -45,9 +45,6 @@ grails.project.dependency.resolution = {
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9"
 		
-		// for heroku 
-		runtime 'postgresql:postgresql:8.4-702.jdbc4'
-		
     }
 
     plugins {
@@ -60,7 +57,7 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.7.1"
 		
 		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.2.25"
+		compile ":twitter-bootstrap:2.0.1.22"
 		compile ':fields:1.1'
 		
 		// why Shiro rather than Spring Security 
@@ -73,13 +70,6 @@ grails.project.dependency.resolution = {
 		
 		compile ':cloud-foundry:1.2.1'
 		compile ':cloud-support:1.0.9'
-		
-		compile(':heroku:1.0.1') {
-			// only using single heroku instance
-			exclude 'database-session'
-		}
-		
-		
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
 //		compile ":jquery-ui:1.8.15"

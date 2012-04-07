@@ -148,3 +148,6 @@ grails.gorm.default.mapping = {
 grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
 
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
+
+lessCss.enable = true
+lessCss.ignorePatterns = [ "css/lib/*.*" ]
