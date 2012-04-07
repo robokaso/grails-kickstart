@@ -1,7 +1,7 @@
 About
 -----
 
-Aims to provide a template that helps to kick-start a best-practice grails projects. 
+Aims to provide a template that helps to kickstart a best-practice grails projects. 
 
 While the choices made are inevitably opinionated the project should still be generally useful:
 
@@ -25,4 +25,9 @@ CI & Demo
 ---------
 Check the live application on [CloudFoundry](http://grailskick.cloudfoundry.com)
 
-Thanks to [Cloudbees](http://cloudbees.com) this project has a [public Jenkins build](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/) [online demo](http://kickstart.robokasofoss.cloudbees.net/).
+Thanks to [Cloudbees](http://cloudbees.com) this project has a [public Jenkins build](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/) and [online demo](http://kickstart.robokasofoss.cloudbees.net/).
+
+Credits
+-------
+
+![Cloudbees FOSS](http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png)
