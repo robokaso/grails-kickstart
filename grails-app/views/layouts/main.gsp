@@ -73,8 +73,8 @@
 
 		<hr />
 		<footer>
-			Build:
-			<g:meta name="build.id" />
+			<span id="buildInfo">Build: <g:meta name="build.id" /></span>
+			<span id="copyright">Copyleft 2011 - <g:year/> </span>
 		</footer>
 	</div>
 

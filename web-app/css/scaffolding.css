@@ -21,3 +21,11 @@ pre.snippet .lineNumber {
 pre.snippet .error {
 	font-weight: bold;
 }
+
+#buildInfo {
+	float: left;
+}
+
+#copyright {
+	float:right;
+}
