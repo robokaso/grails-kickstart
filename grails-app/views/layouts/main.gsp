@@ -25,13 +25,11 @@
 					</ul>
 					<p class="navbar-text pull-right">
 						<shiro:isLoggedIn>
-		         		Logged in as <g:link controller="user" action="profile">
-								<shiro:principal />
-							</g:link> &nbsp; &nbsp;
-		         		<g:link controller="auth" action="signOut">Logout</g:link>
+		         		Logged in as <g:link controller="user" action="profile"> <s:identity/> </g:link> &nbsp; &nbsp;
+						<a href="${s.createLogoutLink() }">Logout</a>
 						</shiro:isLoggedIn>
 						<shiro:notUser>
-							<g:link controller="auth" action="login">Login</g:link>
+							<a href="${s.createLoginLink() }">Login</a>
 						</shiro:notUser>
 					</p>
 				</div>
