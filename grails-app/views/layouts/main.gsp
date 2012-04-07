@@ -60,6 +60,12 @@
 						<li>Services: ${grailsApplication.serviceClasses.size()}</li>
 						<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
 					</ul>
+					<h5>Installed Plugins</h5>
+					<ul>
+						<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
+							<li>${plugin.name} - ${plugin.version}</li>
+						</g:each>
+					</ul>
 				</nav>
 			</section>
 			<section class="span9">
