@@ -56,8 +56,8 @@ grails.project.dependency.resolution = {
 		
         compile ":jquery:1.7.1"
 		
-		compile ":lesscss-resources:1.0.1"
-		compile ":twitter-bootstrap:2.0.1.22"
+		compile ":less-resources:1.3.0.2"
+		compile ":twitter-bootstrap:2.0.2.25"
 		compile ':fields:1.1'
 		
 		// why Shiro rather than Spring Security 
