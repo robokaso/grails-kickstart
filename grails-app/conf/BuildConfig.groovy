@@ -58,7 +58,7 @@ grails.project.dependency.resolution = {
 		
 		compile ":less-resources:1.3.0.2"
 		compile ":twitter-bootstrap:2.0.2.25"
-		compile ':fields:1.1'
+		compile ':fields:1.2'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control

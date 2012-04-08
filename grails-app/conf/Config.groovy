@@ -151,3 +151,7 @@ grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 
 lessCss.enable = true
 lessCss.ignorePatterns = [ "css/lib/*.*" ]
+
+jodatime.format.html5 = true
+
+grails.plugins.twitterbootstrap.fixtaglib = true

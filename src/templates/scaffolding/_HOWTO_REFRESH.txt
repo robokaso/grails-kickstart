@@ -1,0 +1,3 @@
+goto console and run
+
+org.codehaus.groovy.grails.scaffolding.view.ScaffoldingViewResolver.clearViewCache()
