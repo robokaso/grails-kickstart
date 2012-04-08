@@ -7,7 +7,7 @@ class BootStrap {
     def init = { servletContext ->
 		
 		if (!ShiroUser.list()) {
-			fixtureLoader.load('users-roles')
+			fixtureLoader.load('users-roles', 'joda')
 		}
     }
     def destroy = {

@@ -153,5 +153,7 @@ lessCss.enable = true
 lessCss.ignorePatterns = [ "css/lib/*.*" ]
 
 jodatime.format.html5 = true
+jodatime.format.org.joda.time.DateTime='dd-MM-yyyy HH:mm'
+jodatime.format.org.joda.time.LocalDate='dd-MM-yyyy'
 
 grails.plugins.twitterbootstrap.fixtaglib = true
