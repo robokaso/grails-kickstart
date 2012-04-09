@@ -32,5 +32,11 @@ environments {
 //			jndiName = "java:comp/env/jdbc/grailskick"
 //		}
     }
+	cf {
+		dataSource {
+            dbCreate = "update"
+            url = "jdbc:h2:mem:prodDb"
+		}
+	}
 	
 }

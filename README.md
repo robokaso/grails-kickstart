@@ -23,7 +23,7 @@ This is a work in progress at an early stage of development.
 
 CI & Demo
 ---------
-Check the live application on ~~[CloudFoundry](http://grailskick.cloudfoundry.com)~~ and/or [Cloudbees](http://kickstart.robokasofoss.cloudbees.net/).
+Check the live application on [CloudFoundry](http://grailskick.cloudfoundry.com) and/or [Cloudbees](http://kickstart.robokasofoss.cloudbees.net/).
 
 Thanks to [Cloudbees](http://cloudbees.com) this project has a [public Jenkins build](https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/) 
 

@@ -56,13 +56,16 @@ grails.project.dependency.resolution = {
 		
         compile ":jquery:1.7.1"
 		
-		compile ":less-resources:1.3.0.2"
+		//compile ":less-resources:1.3.0.2" //can't deploy to CloudFoundry with this plugin, not clear why
+		compile ":lesscss-resources:1.0.1"
 		compile ":twitter-bootstrap:2.0.2.25"
 		compile ':fields:1.2'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
-		compile ":shiro:1.1.4-SNAPSHOT" 
+		compile(":shiro:1.1.4-SNAPSHOT") {
+			excludes 'servlet-api'
+		}
 		compile ":joda-time:1.4"
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.2"
