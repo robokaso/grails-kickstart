@@ -31,7 +31,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.7.0"
-	final SELENIUM_VERSION = "2.20.0"
+	final SELENIUM_VERSION = "2.21.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -63,7 +63,7 @@ grails.project.dependency.resolution = {
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
-		compile(":shiro:1.1.4-SNAPSHOT") {
+		compile(":shiro:1.1.4") {
 			excludes 'servlet-api'
 		}
 		compile ":joda-time:1.4"
