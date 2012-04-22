@@ -101,6 +101,7 @@ grails.project.dependency.resolution = {
 		build ":codenarc:0.17"
 //		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
+		build ":jslint:0.4"
 		
     }
 }
