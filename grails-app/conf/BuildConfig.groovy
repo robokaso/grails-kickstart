@@ -57,7 +57,7 @@ grails.project.dependency.resolution = {
         compile ":jquery:1.7.1"
 		
 		//compile ":less-resources:1.3.0.2" //can't deploy to CloudFoundry with this plugin, not clear why
-		compile ":lesscss-resources:1.3.0"
+		compile ":lesscss-resources:1.3.0.3"
 		compile ":twitter-bootstrap:2.0.2.25"
 		compile ':fields:1.2'
 		
@@ -89,7 +89,7 @@ grails.project.dependency.resolution = {
 		runtime ":console:1.1"
 		runtime ":fixtures:1.1"
 		runtime ":build-test-data:2.0.2"
-		runtime ":grails-melody:1.13"
+		runtime ":grails-melody:1.14"
 		runtime ":runtime-logging:0.4"
 		
 		test ":spock:0.6"
@@ -101,7 +101,7 @@ grails.project.dependency.resolution = {
 		build ":codenarc:0.17"
 //		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
-		build ":jslint:0.4"
+//		build ":jslint:0.4"
 		
     }
 }
