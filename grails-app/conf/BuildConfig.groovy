@@ -31,7 +31,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.7.0"
-	final SELENIUM_VERSION = "2.21.0"
+	final SELENIUM_VERSION = "2.24.1"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -54,7 +54,7 @@ grails.project.dependency.resolution = {
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
-        compile ":jquery:1.7.1"
+        compile ":jquery:1.7.2"
 		
 		//compile ":less-resources:1.3.0.2" //can't deploy to CloudFoundry with this plugin, not clear why
 		compile ":lesscss-resources:1.3.0.3"
