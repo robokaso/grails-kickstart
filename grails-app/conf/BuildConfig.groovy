@@ -72,8 +72,8 @@ grails.project.dependency.resolution = {
 		compile ':rest-client-builder:1.0.2'
 		compile ':platform-core:1.0.M1'
 		
-		compile ':cloud-foundry:1.2.1'
-		compile ':cloud-support:1.0.9'
+//		compile ':cloud-foundry:1.2.2'
+//		compile ':cloud-support:1.0.11'
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
 //		compile ":jquery-ui:1.8.15"
