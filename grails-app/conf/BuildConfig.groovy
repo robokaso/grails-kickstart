@@ -31,7 +31,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.7.0"
-	final SELENIUM_VERSION = "2.24.1"
+	final SELENIUM_VERSION = "2.25.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -49,7 +49,7 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.1.6"
+        compile ":resources:1.2-RC1"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
@@ -70,10 +70,10 @@ grails.project.dependency.resolution = {
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.2"
 		compile ':rest-client-builder:1.0.2'
-		compile ':platform-core:1.0.M1'
+		compile ':platform-core:1.0.M2'
 		
-//		compile ':cloud-foundry:1.2.2'
-//		compile ':cloud-support:1.0.11'
+		compile ':cloud-foundry:1.2.2'
+		compile ':cloud-support:1.0.11'
 		
 //		TODO CSS compatibility with Twitter Bootstrap	
 //		compile ":jquery-ui:1.8.15"
@@ -86,9 +86,9 @@ grails.project.dependency.resolution = {
 //		compile ":class-diagram:0.5.2"
 		
         runtime ":hibernate:$grailsVersion"
-		runtime ":console:1.1"
+		runtime ":console:1.2"
 		runtime ":fixtures:1.1"
-		runtime ":build-test-data:2.0.2"
+		runtime ":build-test-data:2.0.3"
 		runtime ":grails-melody:1.14"
 		runtime ":runtime-logging:0.4"
 		
@@ -98,7 +98,9 @@ grails.project.dependency.resolution = {
 //		test ':functional-test-development:0.2'
 //		test ':auto-test:1.0.1'
 		
-		build ":codenarc:0.17"
+		build(":codenarc:0.17") {
+			excludes 'groovy-all'
+		}
 //		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 //		build ":jslint:0.4"
