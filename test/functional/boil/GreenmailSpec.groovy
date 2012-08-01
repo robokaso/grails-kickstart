@@ -4,7 +4,7 @@ import boil.support.AuthenticatedSpec
 
 class GreenmailSpec extends AuthenticatedSpec {
 
-	def logging() {
+	void mailbox() {
 		
 		when:
 			$('#greenmail').click()

@@ -10,7 +10,7 @@ class SampleRestfulWebserviceSpec extends Specification {
 
 	def rest = new RestBuilder()
 
-	def 'sample'() {
+	void 'sample'() {
 		
 		when:
 			def resp = rest.get('http://localhost:8080')

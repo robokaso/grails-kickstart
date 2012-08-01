@@ -9,7 +9,7 @@ import boil.support.AuthenticatedSpec
  */
 class MonitoringSpec extends AuthenticatedSpec {
 
-	def 'ping the monitoring page'() {
+	void 'ping the monitoring page'() {
 		
 		when:
 			go('/monitoring')

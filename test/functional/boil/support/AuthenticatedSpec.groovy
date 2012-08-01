@@ -8,7 +8,7 @@ import geb.spock.GebReportingSpec
  * @author Robert Kasanicky
  *
  */
-class AuthenticatedSpec extends GebReportingSpec {
+abstract class AuthenticatedSpec extends GebReportingSpec {
 
 	def setup() {
 		clearCookies()

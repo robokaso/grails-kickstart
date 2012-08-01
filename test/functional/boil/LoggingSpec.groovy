@@ -4,7 +4,7 @@ import boil.support.AuthenticatedSpec
 
 class LoggingSpec extends AuthenticatedSpec {
 
-	def logging() {
+	void logging() {
 		
 		when:
 			$('#logging').click()

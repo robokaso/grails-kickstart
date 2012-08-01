@@ -14,7 +14,7 @@ class JodaIntegrationSpec extends Specification {
 
 	def joda = new Joda()
 	
-	def 'persisting joda-time'() {
+	void 'persisting joda-time'() {
 		
 		setup: 'set joda-time attributes'
 			joda.with {

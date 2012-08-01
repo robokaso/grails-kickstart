@@ -14,7 +14,7 @@ class JodaSpec extends Specification {
 
 	Joda joda = new Joda()
 	
-	def 'mocking joda-time'() {
+	void 'mocking joda-time'() {
 		
 		setup: 'set joda-time attributes'
 			joda.with {

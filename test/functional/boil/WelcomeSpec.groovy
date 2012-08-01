@@ -9,7 +9,11 @@ import geb.spock.GebReportingSpec
  */
 class WelcomeSpec extends GebReportingSpec {
 
-	def 'ping index'() {
+	def setup() {
+		baseUrl = baseUrl ?: 'http://localhost:8080/'
+	}
+	
+	void 'ping index'() {
 		
 		when:
 			go()

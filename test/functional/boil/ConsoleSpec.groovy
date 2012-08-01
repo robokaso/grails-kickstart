@@ -10,7 +10,7 @@ import boil.support.AuthenticatedSpec
 class ConsoleSpec extends AuthenticatedSpec {
 	
 	
-	def 'ping console'() {
+	void 'ping console'() {
 		
 		when:
 			go('/console')

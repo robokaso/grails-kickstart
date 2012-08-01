@@ -30,7 +30,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.7.0"
+	final GEB_VERSION = "0.7.1"
 	final SELENIUM_VERSION = "2.25.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
@@ -59,7 +59,7 @@ grails.project.dependency.resolution = {
 		//compile ":less-resources:1.3.0.2" //can't deploy to CloudFoundry with this plugin, not clear why
 		compile ":lesscss-resources:1.3.0.3"
 		compile ":twitter-bootstrap:2.0.2.25"
-		compile ':fields:1.2'
+		compile ':fields:1.3'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -70,6 +70,7 @@ grails.project.dependency.resolution = {
 		compile ":mail:1.0"
 		compile ":greenmail:1.3.2"
 		compile ':rest-client-builder:1.0.2'
+		
 		compile ':platform-core:1.0.M2'
 		
 		compile ':cloud-foundry:1.2.2'

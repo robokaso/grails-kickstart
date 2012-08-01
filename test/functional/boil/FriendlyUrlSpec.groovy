@@ -4,7 +4,7 @@ import boil.support.AuthenticatedSpec
 
 class FriendlyUrlSpec extends AuthenticatedSpec {
 
-	def 'URL hyphenation'() {
+	void 'URL hyphenation'() {
 		
 		when:
 			go('/friendly-url')
