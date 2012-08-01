@@ -54,11 +54,13 @@ grails.project.dependency.resolution = {
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
+		compile ":angularjs-resources:1.0.1"
+		compile ":lesscss-resources:1.3.0.3"
+		compile ":jasmine-resources:0.1.1"
+		
+		compile ":twitter-bootstrap:2.0.2.25"
         compile ":jquery:1.7.2"
 		
-		//compile ":less-resources:1.3.0.2" //can't deploy to CloudFoundry with this plugin, not clear why
-		compile ":lesscss-resources:1.3.0.3"
-		compile ":twitter-bootstrap:2.0.2.25"
 		compile ':fields:1.3'
 		
 		// why Shiro rather than Spring Security 
@@ -75,17 +77,7 @@ grails.project.dependency.resolution = {
 		
 		compile ':cloud-foundry:1.2.2'
 		compile ':cloud-support:1.0.11'
-		
-//		TODO CSS compatibility with Twitter Bootstrap	
-//		compile ":jquery-ui:1.8.15"
-//		TODO try out
-//		compile ":jquery-ui-widget:0.1.3"
-//		compile ":taxonomy:1.1"
-//		compile ":coffeescript-resources:0.2"
 
-//		FIXME http://jira.grails.org/browse/GPCLASSDIAGRAM-16
-//		compile ":class-diagram:0.5.2"
-		
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.1"
