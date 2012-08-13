@@ -23,7 +23,8 @@ grails.project.dependency.resolution = {
         // from public Maven repositories
         mavenLocal()
         mavenCentral()
-		mavenRepo "http://maven.jenkins-ci.org/content/repositories/releases/" //jrobin.jar for grails-melody
+		mavenRepo "http://maven.jenkins-ci.prg/content/repositories/releases/" //jrobin.jar for grails-melody
+		mavenRepo "http://repo.springsource.org/milestone/"
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
