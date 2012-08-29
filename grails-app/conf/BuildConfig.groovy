@@ -58,8 +58,8 @@ grails.project.dependency.resolution = {
 		compile ":lesscss-resources:1.3.0.3"
 		compile ":jasmine-resources:0.1.1"
 		
-		compile ":twitter-bootstrap:2.0.2.25"
-        compile ":jquery:1.7.2"
+		compile ":twitter-bootstrap:2.1.0.1"
+        compile ":jquery:1.8.0"
 		
 		compile ':fields:1.3'
 		
@@ -73,7 +73,7 @@ grails.project.dependency.resolution = {
 		compile ":greenmail:1.3.2"
 		compile ':rest-client-builder:1.0.2'
 		
-		compile ':platform-core:1.0.M3'
+		compile ':platform-core:1.0.M6'
 		
 		compile ':cloud-foundry:1.2.3'
 		compile ':cloud-support:1.0.11'
