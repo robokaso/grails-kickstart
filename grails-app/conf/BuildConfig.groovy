@@ -30,7 +30,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.7.1"
+	final GEB_VERSION = "0.7.2"
 	final SELENIUM_VERSION = "2.25.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
@@ -49,16 +49,16 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.2-RC1"
+        compile ":resources:1.2.RC2"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
-		compile ":angularjs-resources:1.0.1"
+		compile ":angularjs-resources:1.0.2"
 		compile ":lesscss-resources:1.3.0.3"
 		compile ":jasmine-resources:0.1.1"
 		
-		compile ":twitter-bootstrap:2.1.0.1"
+		compile ":twitter-bootstrap:2.1.1"
         compile ":jquery:1.8.0"
 		
 		compile ':fields:1.3'
