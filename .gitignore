@@ -4,3 +4,5 @@
 /README.html
 /CodeNarcReport.html
 /.settings/
+/target-eclipse
+*.log

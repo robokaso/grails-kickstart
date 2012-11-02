@@ -82,7 +82,11 @@ grails.project.dependency.resolution = {
 		runtime ":console:1.2"
 		runtime ":fixtures:1.1"
 		runtime ":build-test-data:2.0.3"
+		
+		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
 		runtime ":grails-melody:1.14"
+		*/
+		
 		runtime ":runtime-logging:0.4"
 		
 		test ":spock:0.6"

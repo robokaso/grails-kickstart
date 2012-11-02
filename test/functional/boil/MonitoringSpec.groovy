@@ -1,5 +1,6 @@
 package boil
 
+import spock.lang.Ignore;
 import boil.support.AuthenticatedSpec
 
 /**
@@ -7,6 +8,7 @@ import boil.support.AuthenticatedSpec
  * 
  * @author Robert Kasanicky
  */
+@Ignore
 class MonitoringSpec extends AuthenticatedSpec {
 
 	void 'ping the monitoring page'() {
