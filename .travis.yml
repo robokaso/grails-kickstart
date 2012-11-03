@@ -3,4 +3,4 @@ language: groovy
 jdk:
   - openjdk7
 
-script: ./grailsw test-app
+script: ./grailsw test-app -unit; ./grailsw test-app -integration; ./grailsw test-app -functional
