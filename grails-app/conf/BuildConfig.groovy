@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
         // uncomment to disable ehcache
         // excludes 'ehcache'
     }
-    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "info" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
 		
         grailsPlugins()
@@ -23,7 +23,7 @@ grails.project.dependency.resolution = {
         // from public Maven repositories
         mavenLocal()
         mavenCentral()
-		mavenRepo "http://repo.springsource.org/milestone/"
+		//mavenRepo "http://repo.springsource.org/milestone/"
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -43,7 +43,7 @@ grails.project.dependency.resolution = {
 		
 		test "org.codehaus.geb:geb-spock:$GEB_VERSION"
 		
-		compile "org.jadira.usertype:usertype.jodatime:1.9"
+		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
 		
     }
 
@@ -58,7 +58,7 @@ grails.project.dependency.resolution = {
 		compile ":lesscss-resources:1.3.0.3"
 		compile ":jasmine-resources:0.1.1"
 		
-		compile ":twitter-bootstrap:2.1.1"
+		compile ":twitter-bootstrap:2.2.1"
         compile ":jquery:1.8.0"
 		
 		compile ':fields:1.3'
@@ -80,7 +80,7 @@ grails.project.dependency.resolution = {
 
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.2"
-		runtime ":fixtures:1.1"
+		runtime ":fixtures:1.2"
 		runtime ":build-test-data:2.0.3"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
@@ -89,15 +89,18 @@ grails.project.dependency.resolution = {
 		
 		runtime ":runtime-logging:0.4"
 		
-		test ":spock:0.6"
+		test ":spock:0.7"
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 //		test ':functional-test-development:0.2'
 //		test ':auto-test:1.0.1'
 		
+		/* not maintained?
 		build(":codenarc:0.17") {
 			excludes 'groovy-all'
 		}
+		*/
+		
 //		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
 //		build ":jslint:0.4"
