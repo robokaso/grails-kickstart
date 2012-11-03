@@ -89,7 +89,7 @@ grails.project.dependency.resolution = {
 		
 		runtime ":runtime-logging:0.4"
 		
-		test ":spock:0.7"
+		test ":spock:0.6"
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 //		test ':functional-test-development:0.2'
