@@ -33,5 +33,3 @@ Credits
 -------
 
 The twitter bootstrap scaffolding was largely copied from  https://github.com/robfletcher/twitter-bootstrap-scaffolding/
-
-![Cloudbees FOSS](http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png)

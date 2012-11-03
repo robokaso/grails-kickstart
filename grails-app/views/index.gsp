@@ -15,8 +15,7 @@
 				href="https://github.com/robokaso/grails-kickstart">Github</a>
 		</p>
 		<p>
-			Check the build status on <a
-				href="https://robokasofoss.ci.cloudbees.com/job/grails-kickstart/">Cloudbees</a>
+			[![Build Status](https://travis-ci.org/robokaso/grails-kickstart.png)](https://travis-ci.org/robokaso/grails-kickstart)
 		</p>
 	</article>
 </body>
