@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/robokaso/grails-kickstart.png)](https://travis-ci.org/robokaso/grails-kickstart)
+
 About
 -----
 
