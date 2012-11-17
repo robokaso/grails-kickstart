@@ -53,7 +53,7 @@
 					<h5>Application status</h5>
 					<ul>
 						<li>Grails version: <g:meta name="app.grails.version" /></li>
-						<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
+						<li>Groovy version: ${groovy.lang.GroovySystem.getVersion()}</li>
 						<li>JVM version: ${System.getProperty('java.version')}</li>
 						<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
 						<li>Domains: ${grailsApplication.domainClasses.size()}</li>

@@ -15,7 +15,7 @@
 				href="https://github.com/robokaso/grails-kickstart">Github</a>
 		</p>
 		<p>
-			[![Build Status](https://travis-ci.org/robokaso/grails-kickstart.png)](https://travis-ci.org/robokaso/grails-kickstart)
+			<a href="https://travis-ci.org/robokaso/grails-kickstart"><img src="https://travis-ci.org/robokaso/grails-kickstart.png" /></a>
 		</p>
 	</article>
 </body>

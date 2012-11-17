@@ -42,6 +42,7 @@ grails.project.dependency.resolution = {
 //		test("org.seleniumhq.selenium:selenium-chrome-driver:$SELENIUM_VERSION")
 		
 		test "org.gebish:geb-spock:$GEB_VERSION"
+		test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
 		
@@ -91,7 +92,9 @@ grails.project.dependency.resolution = {
 		
 		runtime ":runtime-logging:0.4"
 		
-		test ":spock:0.7"
+		test(":spock:0.7") {
+			exclude "spock-grails-support"	
+		}
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
 		test ':functional-test-development:0.9.3'

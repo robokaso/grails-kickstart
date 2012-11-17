@@ -6,3 +6,5 @@
 /.settings/
 /target-eclipse
 *.log
+/grailskick.sublime-project
+/grailskick.sublime-workspace
