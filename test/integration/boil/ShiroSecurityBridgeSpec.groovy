@@ -65,5 +65,13 @@ class ShiroSecurityBridgeSpec extends AbstractShiroSpec {
 			grailsSecurityBridge.createLink('logout') == [controller: 'auth', action: 'signOut']
 		
 	}
+
+	void 'user exsits'() {
+		expect: "only usernames of registered users are accepted"
+			grailsSecurityBridge.userExists('super')	
+			!grailsSecurityBridge.userExists('notExistant')	
+			!grailsSecurityBridge.userExists(new Object())	
+
+	}
 	
 }

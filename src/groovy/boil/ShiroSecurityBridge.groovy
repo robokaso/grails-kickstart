@@ -60,4 +60,10 @@ class ShiroSecurityBridge implements SecurityBridge {
 		}
 	}
 
+	@Override
+	boolean userExists(Object identity) {
+		def username = identity.toString()
+		ShiroUser.findByUsername(username) ? true : false
+	}
+
 }
