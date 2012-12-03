@@ -74,7 +74,7 @@ grails.project.dependency.resolution = {
 		compile ":greenmail:1.3.3"
 		compile ':rest-client-builder:1.0.2'
 		
-		compile ':platform-core:1.0.RC1'
+		compile ':platform-core:1.0.RC2'
 		compile ':events-push:1.0.M3'
 		
 		compile ':cloud-foundry:1.2.3'
