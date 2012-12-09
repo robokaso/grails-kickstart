@@ -7,10 +7,10 @@
 	<article class="hero-unit">
 		<h1>Grails Kickstart</h1>
 		<div class="well">
-			<ul class="unstyled">
-					<li><i class="icon-ok"> </i> template project for non-trivial grails webapps </li>
-					<li><i class="icon-ok"> </i> comprehensive set of pre-configured plugins </li>
-					<li><i class="icon-ok"> </i> skip the boilerplate and get started developing a best-practice webapp</li>
+			<ul>
+				<li>template project for non-trivial grails webapps </li>
+				<li>comprehensive set of pre-configured plugins </li>
+				<li>skip the boilerplate and get started developing a best-practice webapp</li>
 			</ul>
 		</div>
 		<p>

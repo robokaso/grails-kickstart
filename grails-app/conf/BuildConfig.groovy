@@ -59,7 +59,7 @@ grails.project.dependency.resolution = {
 		compile ":lesscss-resources:1.3.0.3"
 //		compile ":jasmine-resources:0.1.1"
 		
-		compile ":twitter-bootstrap:2.2.1"
+		compile ":twitter-bootstrap:2.2.2"
 		// compile ":font-awesome-resources:2.0.1" https://github.com/halfbaked/grails-font-awesome-resources/issues/2
         compile ":jquery:1.8.3"
 		
