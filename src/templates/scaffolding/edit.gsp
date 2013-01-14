@@ -7,63 +7,36 @@
 		<title><g:message code="default.edit.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<div class="row-fluid">
-
-			<div>
-
-				<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
-
-				<div class="subnav">
-		          <ul class="nav nav-pills">
-		          	<li>
-						<g:link action="list">
-							<i class="icon-list"></i>
-							<g:message code="default.list.label" args="[entityName]" />
-						</g:link>
-		          	</li>
-					<li>
-						<g:link action="create">
-							<i class="icon-plus"></i>
-							<g:message code="default.create.label" args="[entityName]" />
-						</g:link>
-					</li>
-		          </ul>
-		        </div>
-				<g:if test="\${flash.message}">
-				<bootstrap:alert class="alert-info">\${flash.message}</bootstrap:alert>
-				</g:if>
-
-				<g:hasErrors bean="\${${propertyName}}">
-				<bootstrap:alert class="alert-error">
-				<ul>
-					<g:eachError bean="\${${propertyName}}" var="error">
-					<li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>><g:message error="\${error}"/></li>
-					</g:eachError>
-				</ul>
-				</bootstrap:alert>
-				</g:hasErrors>
-
-				<fieldset>
-					<g:form class="form-horizontal" action="edit" id="\${${propertyName}?.id}" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
-						<g:hiddenField name="version" value="\${${propertyName}?.version}" />
-						<fieldset>
-							<f:all bean="${propertyName}"/>
-							<div class="form-actions">
-								<button type="submit" class="btn btn-primary">
-									<i class="icon-ok icon-white"></i>
-									<g:message code="default.button.update.label" default="Update" />
-								</button>
-								<button type="submit" class="btn btn-danger" name="_action_delete" formnovalidate>
-									<i class="icon-trash icon-white"></i>
-									<g:message code="default.button.delete.label" default="Delete" />
-								</button>
-							</div>
-						</fieldset>
-					</g:form>
+		<a href="#edit-${domainClass.propertyName}" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="edit-${domainClass.propertyName}" class="content scaffold-edit" role="main">
+			<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
+			<g:if test="\${flash.message}">
+			<div class="message" role="status">\${flash.message}</div>
+			</g:if>
+			<g:hasErrors bean="\${${propertyName}}">
+			<ul class="errors" role="alert">
+				<g:eachError bean="\${${propertyName}}" var="error">
+				<li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>><g:message error="\${error}"/></li>
+				</g:eachError>
+			</ul>
+			</g:hasErrors>
+			<g:form method="post" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
+				<g:hiddenField name="id" value="\${${propertyName}?.id}" />
+				<g:hiddenField name="version" value="\${${propertyName}?.version}" />
+				<fieldset class="form">
+					<f:all bean="${propertyName}"/>
 				</fieldset>
-
-			</div>
-
+				<fieldset class="buttons">
+					<g:actionSubmit class="save" action="update" value="\${message(code: 'default.button.update.label', default: 'Update')}" />
+					<g:actionSubmit class="delete" action="delete" value="\${message(code: 'default.button.delete.label', default: 'Delete')}" formnovalidate="" onclick="return confirm('\${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+				</fieldset>
+			</g:form>
 		</div>
 	</body>
 </html>

@@ -7,52 +7,32 @@
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<div class="row-fluid">
-			
-			<div>
-
-				<h1><g:message code="default.create.label" args="[entityName]" /></h1>
-
-				<div class="subnav">
-		          <ul class="nav nav-pills">
-		            <li>
-						<g:link action="list">
-							<i class="icon-list"></i>
-							<g:message code="default.list.label" args="[entityName]" />
-						</g:link>
-		            </li>
-		          </ul>
-		        </div>
-				<g:if test="\${flash.message}">
-				<bootstrap:alert class="alert-info">\${flash.message}</bootstrap:alert>
-				</g:if>
-
-				<g:hasErrors bean="\${${propertyName}}">
-				<bootstrap:alert class="alert-error">
-				<ul>
-					<g:eachError bean="\${${propertyName}}" var="error">
-					<li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>><g:message error="\${error}"/></li>
-					</g:eachError>
-				</ul>
-				</bootstrap:alert>
-				</g:hasErrors>
-
-				<fieldset>
-					<g:form class="form-horizontal" action="create" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
-						<fieldset>
-							<f:all bean="${propertyName}"/>
-							<div class="form-actions">
-								<button type="submit" class="btn btn-primary">
-									<i class="icon-ok icon-white"></i>
-									<g:message code="default.button.create.label" default="Create" />
-								</button>
-							</div>
-						</fieldset>
-					</g:form>
+		<a href="#create-${domainClass.propertyName}" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<div class="nav" role="navigation">
+			<ul>
+				<li><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+			</ul>
+		</div>
+		<div id="create-${domainClass.propertyName}" class="content scaffold-create" role="main">
+			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
+			<g:if test="\${flash.message}">
+			<div class="message" role="status">\${flash.message}</div>
+			</g:if>
+			<g:hasErrors bean="\${${propertyName}}">
+			<ul class="errors" role="alert">
+				<g:eachError bean="\${${propertyName}}" var="error">
+				<li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>><g:message error="\${error}"/></li>
+				</g:eachError>
+			</ul>
+			</g:hasErrors>
+			<g:form action="save" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
+				<fieldset class="form">
+					<f:all bean="${propertyName}"/>
 				</fieldset>
-				
-			</div>
-
+				<fieldset class="buttons">
+					<g:submitButton name="create" class="save" value="\${message(code: 'default.button.create.label', default: 'Create')}" />
+				</fieldset>
+			</g:form>
 		</div>
 	</body>
 </html>
