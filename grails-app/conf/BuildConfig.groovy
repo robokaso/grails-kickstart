@@ -75,7 +75,7 @@ grails.project.dependency.resolution = {
 		compile ":greenmail:1.3.3"
 		compile ':rest-client-builder:1.0.2'
 		
-		compile ':platform-core:1.0.RC2'
+		compile ':platform-core:1.0.RC5'
 		compile ':events-push:1.0.M3'
 		
 		compile ':cloud-foundry:1.2.3'
@@ -97,8 +97,8 @@ grails.project.dependency.resolution = {
 		}
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.5"
-		test ':functional-test-development:0.9.3'
-		test ":remote-control:1.3"
+		test ':functional-test-development:0.9.4'
+		test ":remote-control:1.4"
 //		test ':auto-test:1.0.1'
 		
 		/* not maintained?

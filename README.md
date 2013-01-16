@@ -19,15 +19,6 @@ License
 **Apache License Version 2.0** (i.e. same as [Grails](http://grails.org/License") so that you don't have to think about licensing and focus on building webapps instead)
 
 
-WARNING
--------
-This is a work in progress at an early stage of development.
-
 Demo
 ---------
 Check the live application on [CloudFoundry](http://grailskick.cloudfoundry.com) 
-
-Credits
--------
-
-The twitter bootstrap scaffolding was largely copied from  https://github.com/robfletcher/twitter-bootstrap-scaffolding/
