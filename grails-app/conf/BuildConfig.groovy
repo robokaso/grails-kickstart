@@ -31,7 +31,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.9.0-RC-1"
-	final SELENIUM_VERSION = "2.28.0"
+	final SELENIUM_VERSION = "2.30.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -49,18 +49,15 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.2.RC2"
+        compile ":resources:1.2.RC3"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
-		compile ":angular-scaffolding:1.0-SNAPSHOT"
-		compile ":angularjs-resources:1.0.2"
-		compile ":lesscss-resources:1.3.0.3"
-//		compile ":jasmine-resources:0.1.1"
+		compile ":less-resources:1.3.3.1"
 		
-		compile ":twitter-bootstrap:2.2.2"
-		// compile ":font-awesome-resources:2.0.1" https://github.com/halfbaked/grails-font-awesome-resources/issues/2
+		compile ":twitter-bootstrap:2.3.0"
+		compile ":font-awesome-resources:3.0"
         compile ":jquery:1.8.3"
 		
 		compile ':fields:1.3'
@@ -72,11 +69,12 @@ grails.project.dependency.resolution = {
 		}
 		compile ":joda-time:1.4"
 		compile ":mail:1.0.1"
-		compile ":greenmail:1.3.3"
+		compile ":greenmail:1.3.4"
 		compile ':rest-client-builder:1.0.2'
 		
 		compile ':platform-core:1.0.RC5'
-		compile ':events-push:1.0.M3'
+		// problematic atmosphere-snapshot dependency
+		// compile ':events-push:1.0.M7'
 		
 		compile ':cloud-foundry:1.2.3'
 		compile ':cloud-support:1.0.11'
@@ -84,7 +82,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.2"
-		runtime ":build-test-data:2.0.3"
+		runtime ":build-test-data:2.0.4"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
 		runtime ":grails-melody:1.14"
@@ -107,9 +105,7 @@ grails.project.dependency.resolution = {
 		}
 		*/
 		
-//		build ":eclipse-scripts:1.0.5"
         build ":tomcat:$grailsVersion"
-//		build ":jslint:0.4"
 		
     }
 }
