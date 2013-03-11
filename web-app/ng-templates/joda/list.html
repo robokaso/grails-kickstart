@@ -1,0 +1,30 @@
+
+<div class="page-header">
+	<h1>Joda List</h1>
+</div>
+<alert level="{{message.level}}" text="{{message.text}}"/>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+		
+			<th>Date Time</th>
+		
+			<th>Duration</th>
+		
+			<th>Local Date</th>
+		
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="item in list" data-ng-click="show(item)">
+		
+			<td>{{item.dateTime}}</td>
+		
+			<td>{{item.duration.millis}} ms</td>
+		
+			<td>{{item.localDate}}</td>
+		
+        </tr>
+    </tbody>
+</table>
+<div class="pagination pagination-centered" data-pagination data-total="total"></div>

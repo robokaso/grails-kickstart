@@ -1,0 +1,38 @@
+
+<div class="page-header">
+	<h1>Edit Joda</h1>
+</div>
+<alert level="{{message.level}}" text="{{message.text}}"/>
+<form name="form" data-ng-submit="update(item)" class="form-horizontal">
+	<input type="hidden" data-ng-model="item.id">
+	<input type="hidden" data-ng-model="item.version">
+
+	<div class="control-group" data-ng-class="{error: errors.dateTime}">
+		<label class="control-label" for="dateTime">Date Time</label>
+		<div class="controls">
+			<input type="text" id="dateTime" name="dateTime" required data-ng-model="item.dateTime">
+			<span class="help-inline" data-ng-show="errors.dateTime">{{errors.dateTime}}</span>
+		</div>
+	</div>
+	
+	<div class="control-group" data-ng-class="{error: errors.duration}">
+		<label class="control-label" for="duration">Duration</label>
+		<div class="controls">
+			<input type="text" id="duration" name="duration" required data-ng-model="item.duration">
+			<span class="help-inline" data-ng-show="errors.duration">{{errors.duration}}</span>
+		</div>
+	</div>
+	
+	<div class="control-group" data-ng-class="{error: errors.localDate}">
+		<label class="control-label" for="localDate">Local Date</label>
+		<div class="controls">
+			<input type="text" id="localDate" name="localDate" required data-ng-model="item.localDate">
+			<span class="help-inline" data-ng-show="errors.localDate">{{errors.localDate}}</span>
+		</div>
+	</div>
+	
+	<div class="form-actions">
+		<button type="submit" class="btn btn-primary" data-ng-disabled="form.$invalid"><i class="icon-ok"></i> Update</button>
+		<button type="button" class="btn btn-danger" data-ng-click="delete(item)"><i class="icon-trash"></i> Delete</button>
+	</div>
+</form>
