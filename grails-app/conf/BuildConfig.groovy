@@ -30,8 +30,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.9.0-RC-1"
-	final SELENIUM_VERSION = "2.30.0"
+	final GEB_VERSION = "0.9.0"
+	final SELENIUM_VERSION = "2.32.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -57,7 +57,7 @@ grails.project.dependency.resolution = {
 		compile ":less-resources:1.3.3.1"
 		
 		compile ":twitter-bootstrap:2.3.0"
-		compile ":font-awesome-resources:3.0"
+		compile ":font-awesome-resources:3.1"
         compile ":jquery:1.8.3"
 		
 		compile ':fields:1.3'
@@ -82,7 +82,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.2"
-		runtime ":build-test-data:2.0.4"
+		runtime ":build-test-data:2.0.5"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
 		runtime ":grails-melody:1.14"
@@ -94,7 +94,7 @@ grails.project.dependency.resolution = {
 			exclude "spock-grails-support"	
 		}
 		test ":geb:$GEB_VERSION"
-		test ":code-coverage:1.2.5"
+		test ":code-coverage:1.2.6"
 		test ':functional-test-development:0.9.4'
 		test ":remote-control:1.4"
 //		test ':auto-test:1.0.1'
