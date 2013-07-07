@@ -41,6 +41,7 @@
 		<div class="row-fluid">
 			<section class="span3">
 				<nav class="well sidebar-nav">
+				<cache:block>
 					<h5>Admin</h5>
 					<ul>
 					<%-- 
@@ -66,6 +67,7 @@
 							<li>${plugin.name} - ${plugin.version}</li>
 						</g:each>
 					</ul>
+				</cache:block>
 				</nav>
 			</section>
 			<section class="span9">

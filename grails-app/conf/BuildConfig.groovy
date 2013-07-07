@@ -55,6 +55,8 @@ grails.project.dependency.resolution = {
 		compile ':cache-headers:1.1.5'
 		
 		compile ":less-resources:1.3.3.1"
+
+		compile ":cache:1.1.1"
 		
 		compile ":twitter-bootstrap:2.3.2"
 		compile ":font-awesome-resources:3.1"
