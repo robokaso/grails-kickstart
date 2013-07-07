@@ -21,4 +21,4 @@ License
 
 Demo
 ---------
-Check the live application on [CloudFoundry](http://grailskick.cloudfoundry.com) 
+Check the live application on ~~[CloudFoundry](http://grailskick.cloudfoundry.com)~~

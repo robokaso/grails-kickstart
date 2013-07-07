@@ -56,9 +56,9 @@ grails.project.dependency.resolution = {
 		
 		compile ":less-resources:1.3.3.1"
 		
-		compile ":twitter-bootstrap:2.3.0"
+		compile ":twitter-bootstrap:2.3.2"
 		compile ":font-awesome-resources:3.1"
-        compile ":jquery:1.8.3"
+        compile ":jquery:1.10.0"
 		
 		compile ':fields:1.3'
 		
@@ -76,9 +76,6 @@ grails.project.dependency.resolution = {
 		// problematic atmosphere-snapshot dependency
 		// compile ':events-push:1.0.M7'
 		
-		compile ':cloud-foundry:1.2.3'
-		compile ':cloud-support:1.0.11'
-
         runtime ":hibernate:$grailsVersion"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.2"
