@@ -30,8 +30,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.9.0"
-	final SELENIUM_VERSION = "2.32.0"
+	final GEB_VERSION = "0.9.2"
+	final SELENIUM_VERSION = "2.37.1"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
@@ -41,7 +41,6 @@ grails.project.dependency.resolution = {
 //		test("org.seleniumhq.selenium:selenium-chrome-driver:$SELENIUM_VERSION")
 		
 		test "org.gebish:geb-spock:$GEB_VERSION"
-		test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
 		
@@ -49,7 +48,7 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.2.RC3"
+        compile ":resources:1.2"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
@@ -62,7 +61,7 @@ grails.project.dependency.resolution = {
 		compile ":font-awesome-resources:3.1"
         compile ":jquery:1.10.0"
 		
-		compile ':fields:1.3'
+		// compile ':fields:1.3'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
@@ -70,7 +69,9 @@ grails.project.dependency.resolution = {
 			excludes 'servlet-api'
 		}
 		compile ":joda-time:1.4"
-		compile ":mail:1.0.1"
+		compile(":mail:1.0.1") {
+			excludes 'spring-test'
+		}
 		compile ":greenmail:1.3.4"
 		compile ':rest-client-builder:1.0.2'
 		
@@ -78,10 +79,10 @@ grails.project.dependency.resolution = {
 		// problematic atmosphere-snapshot dependency
 		// compile ':events-push:1.0.M7'
 		
-        runtime ":hibernate:$grailsVersion"
+		runtime ":hibernate:3.6.10.2"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.2"
-		runtime ":build-test-data:2.0.5"
+		runtime ":build-test-data:2.0.6"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
 		runtime ":grails-melody:1.14"
@@ -89,22 +90,17 @@ grails.project.dependency.resolution = {
 		
 		runtime ":runtime-logging:0.4"
 		
-		test(":spock:0.7") {
-			exclude "spock-grails-support"	
-		}
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.6"
 		test ':functional-test-development:0.9.4'
 		test ":remote-control:1.4"
 //		test ':auto-test:1.0.1'
 		
-		/* not maintained?
-		build(":codenarc:0.17") {
+		build(":codenarc:0.19") {
 			excludes 'groovy-all'
 		}
-		*/
-		
-        build ":tomcat:$grailsVersion"
+
+        build ":tomcat:7.0.42"
 		
     }
 }

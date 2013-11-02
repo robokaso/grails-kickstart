@@ -48,7 +48,7 @@
 						<li><g:link elementId="monitoring" controller="monitoring">Monitoring</g:link></li>
 					--%>
 						<li><g:link elementId="console" controller="console">Console</g:link></li>
-						<li><g:link elementId="greenmail" controller="greenmail" action="list.html" >Greenmail</g:link></li>
+						<li><g:link elementId="greenmail" controller="greenmail" action="list" >Greenmail</g:link></li>
 						<li><g:link elementId="logging" controller="runtimeLogging">Logging</g:link></li>
 					</ul>
 					<h5>Application status</h5>

@@ -19,6 +19,6 @@ class WelcomeSpec extends GebReportingSpec {
 			go()
 			
 		then:
-			$('title').text() == 'grailskick'
+			title =~ 'Grails'
 	}
 }

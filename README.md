@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/robokaso/grails-kickstart.png)](https://travis-ci.org/robokaso/grails-kickstart)
+[![Build Status](https://travis-ci.org/critsk/grails-kickstart.png)](https://travis-ci.org/critsk/grails-kickstart)
 
 About
 -----

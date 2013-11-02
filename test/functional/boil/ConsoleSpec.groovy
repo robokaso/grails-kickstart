@@ -16,7 +16,7 @@ class ConsoleSpec extends AuthenticatedSpec {
 			go('/console')
 			
 		then:
-			$('title').text() == 'Grails Console'	
+			title == 'Grails Console'	
 	}
 
 }

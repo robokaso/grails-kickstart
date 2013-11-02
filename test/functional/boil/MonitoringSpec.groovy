@@ -17,7 +17,7 @@ class MonitoringSpec extends AuthenticatedSpec {
 			go('/monitoring')
 			
 		then:
-			$('title').text().startsWith('Monitoring JavaMelody')
+			title.startsWith('Monitoring JavaMelody')
 	}
 	
 	

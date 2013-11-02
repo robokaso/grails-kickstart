@@ -1,6 +1,6 @@
 package boil
 
-import grails.plugin.spock.IntegrationSpec
+import spock.lang.Specification
 
 
 import org.apache.shiro.SecurityUtils
@@ -16,7 +16,7 @@ import org.apache.shiro.mgt.SecurityManager as SecurityManager
 * 
 * @see http://shiro.apache.org/testing.html
 */
-abstract class AbstractShiroSpec extends IntegrationSpec {
+abstract class AbstractShiroSpec extends Specification {
 
 	private static ThreadState subjectThreadState;
 	

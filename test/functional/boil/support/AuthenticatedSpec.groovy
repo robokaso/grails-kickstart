@@ -14,14 +14,14 @@ abstract class AuthenticatedSpec extends GebReportingSpec {
 		clearCookies()
 		baseUrl = baseUrl ?: 'http://localhost:8080/'
 		go '/auth/login'
-		assert $('title').text() =~ "Login"
+		assert title =~ "Login"
 
 		def form = $('form')
 		form.username = 'super'
 		form.password = 'test'
 
 		$('input', type: 'submit').click()
-		assert $('title').text() =~ "grails"
+		assert title =~ "Grails"
 	}
 
 	def cleanup() {

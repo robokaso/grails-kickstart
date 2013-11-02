@@ -1,11 +1,11 @@
 package boil
 
-import grails.plugin.spock.IntegrationSpec
+import spock.lang.Specification
 
 import com.icegreen.greenmail.util.GreenMailUtil
 
 
-class EmailIntegrationSpec extends IntegrationSpec {
+class EmailIntegrationSpec extends Specification {
 
 	def mailService
 	def greenMail
