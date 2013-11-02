@@ -48,24 +48,24 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.2"
+        compile ":resources:1.2.1"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
-		compile ":less-resources:1.3.3.1"
+		compile ":less-resources:1.3.3.2"
 
 		compile ":cache:1.1.1"
 		
 		compile ":twitter-bootstrap:2.3.2"
-		compile ":font-awesome-resources:3.1"
-        compile ":jquery:1.10.0"
+		compile ":font-awesome-resources:3.2.1.3"
+        compile ":jquery:1.10.2"
 		
 		// compile ':fields:1.3'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
-		compile(":shiro:1.1.4") {
+		compile(":shiro:1.2.0") {
 			excludes 'servlet-api'
 		}
 		compile ":joda-time:1.4"
@@ -73,7 +73,7 @@ grails.project.dependency.resolution = {
 			excludes 'spring-test'
 		}
 		compile ":greenmail:1.3.4"
-		compile ':rest-client-builder:1.0.2'
+		compile ':rest-client-builder:2.0.0'
 		
 		compile ':platform-core:1.0.RC5'
 		// problematic atmosphere-snapshot dependency
