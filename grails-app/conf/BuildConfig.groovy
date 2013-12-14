@@ -59,7 +59,7 @@ grails.project.dependency.resolution = {
 		
 		compile ":twitter-bootstrap:2.3.2"
 		compile ":font-awesome-resources:3.2.1.3"
-        compile ":jquery:1.10.2"
+        compile ":jquery:1.10.2.2"
 		
 		// compile ':fields:1.3'
 		
@@ -75,14 +75,14 @@ grails.project.dependency.resolution = {
 		compile ":greenmail:1.3.4"
 		compile ':rest-client-builder:2.0.0'
 		
-		compile ':platform-core:1.0.RC5'
+		compile ':platform-core:1.0.RC6'
 		// problematic atmosphere-snapshot dependency
 		// compile ':events-push:1.0.M7'
 		
-		runtime ":hibernate:3.6.10.2"
+		runtime ":hibernate:3.6.10.6"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.2"
-		runtime ":build-test-data:2.0.6"
+		runtime ":build-test-data:2.0.9"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
 		runtime ":grails-melody:1.14"
@@ -91,7 +91,7 @@ grails.project.dependency.resolution = {
 		runtime ":runtime-logging:0.4"
 		
 		test ":geb:$GEB_VERSION"
-		test ":code-coverage:1.2.6"
+		test ":code-coverage:1.2.7"
 		test ':functional-test-development:0.9.4'
 		test ":remote-control:1.4"
 //		test ':auto-test:1.0.1'
