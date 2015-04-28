@@ -33,7 +33,7 @@ grails.project.dependency.resolution = {
     }
 	
 	final GEB_VERSION = "0.9.2"
-	final SELENIUM_VERSION = "2.37.1"
+	final SELENIUM_VERSION = "2.45.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
