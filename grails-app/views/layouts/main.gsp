@@ -2,44 +2,49 @@
 <head>
 <title><g:layoutTitle default="${meta(name: 'app.name') }"/></title>
 <meta name="layout" content="main" />
-<r:require module="scaffolding" />
-<r:layoutResources />
+<asset:javascript src="application.js"/>
+<asset:stylesheet src="application.css"/>
 <g:layoutHead/>
 </head>
 
 <body>
-	<header class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<a class="btn btn-navbar" data-toggle="collapse"
-					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span>
-				</a> <a class="brand" href="/"><g:meta name="app.name" /></a>
-				<div class="nav-collapse">
-
-					<ul class="nav">
-						<li class="active"><g:link controller="joda">Joda CRUD</g:link></li>
-						<li><a
-							href="https://github.com/robokaso/grails-kickstart#readme">About</a></li>
-						<li><a href="https://github.com/robokaso">Contact</a></li>
-					</ul>
-					<p class="navbar-text pull-right">
-						<shiro:isLoggedIn>
-		         		Logged in as <g:link controller="user" action="profile"> <s:identity/> </g:link> &nbsp; &nbsp;
-						<a href="${s.createLogoutLink() }">Logout</a>
-						</shiro:isLoggedIn>
-						<shiro:notUser>
-							<a href="${s.createLoginLink() }">Login</a>
-						</shiro:notUser>
-					</p>
-				</div>
-			</div>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/"><g:meta name="app.name" /></a>
 		</div>
-	</header>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><g:link controller="joda">Joda CRUD</g:link></li>
+				<li><a
+						href="https://github.com/robokaso/grails-kickstart#readme">About</a></li>
+				<li><a href="https://github.com/robokaso">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<shiro:isLoggedIn>
+					<li><g:link controller="user" action="profile"> <s:identity/> </g:link> &nbsp; &nbsp;
+					<li><a href="${s.createLogoutLink() }">Logout</a></li>
+				</shiro:isLoggedIn>
+				<shiro:notUser>
+					<li><a href="${s.createLoginLink() }">Login</a></li>
+				</shiro:notUser>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
 	
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<section class="span3">
+			<section class="col-sm-3">
 				<nav class="well sidebar-nav">
 				<cache:block>
 					<h5>Admin</h5>
@@ -66,7 +71,7 @@
 				</cache:block>
 				</nav>
 			</section>
-			<section class="span9">
+			<section class="col-sm-9">
 				<g:layoutBody/>
 			</section>
 		</div>
@@ -78,7 +83,6 @@
 		</footer>
 	</div>
 
-	<r:layoutResources />
 </body>
 
 </html>

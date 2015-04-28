@@ -52,17 +52,13 @@ grails.project.dependency.resolution = {
 
     plugins {
 		
-        compile ":resources:1.2.14"
-		compile ':cached-resources:1.0'
-		compile ':zipped-resources:1.0'
-		compile ':cache-headers:1.1.5'
 
-		compile ":less-resources:1.3.3.2"
-
+		compile ":asset-pipeline:2.1.5"
+		compile ":less-asset-pipeline:2.1.0"
 		compile ":cache:1.1.8"
 		
-		compile ":twitter-bootstrap:2.3.2"
-		compile ":font-awesome-resources:3.2.1.3"
+		compile ":twitter-bootstrap:3.3.4"
+		compile ":font-awesome-resources:4.3.0.1"
         compile ":jquery:1.11.1"
 		
 		// compile ':fields:1.3'

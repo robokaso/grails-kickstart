@@ -146,13 +146,11 @@ grails.gorm.default.mapping = {
 
 grails.mail.port = com.icegreen.greenmail.util.ServerSetupTest.SMTP.port
 
-grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
-
-lessCss.enable = true
-lessCss.ignorePatterns = [ "css/lib/*.*" ]
-
 jodatime.format.html5 = true
 jodatime.format.org.joda.time.DateTime='dd-MM-yyyy HH:mm'
 jodatime.format.org.joda.time.LocalDate='dd-MM-yyyy'
 
 grails.plugins.twitterbootstrap.fixtaglib = true
+
+grails.assets.plugin."twitter-bootstrap".excludes = ["**/*.less"]
+//grails.assets.plugin."twitter-bootstrap".includes = ["bootstrap.less"]
