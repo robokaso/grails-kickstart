@@ -56,7 +56,7 @@ grails.project.dependency.resolution = {
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
-		
+
 		compile ":less-resources:1.3.3.2"
 
 		compile ":cache:1.1.8"
@@ -72,7 +72,7 @@ grails.project.dependency.resolution = {
 		compile(":shiro:1.2.1") {
 			excludes 'servlet-api'
 		}
-		compile ":joda-time:1.4"
+		compile ":joda-time:1.5"
 		compile(":mail:1.0.7") {
 			excludes 'spring-test'
 		}
@@ -87,11 +87,8 @@ grails.project.dependency.resolution = {
 		runtime ":build-test-data:2.0.9"
 		
 		test ":geb:$GEB_VERSION"
-		test ":code-coverage:1.2.7"
-		test ':functional-test-development:0.9.4'
-		test ":remote-control:2.0"
-//		test ':auto-test:1.0.1'
-		
+		test ":code-coverage:2.0.3-3"
+
 		build(":codenarc:0.23") {
 			excludes 'groovy-all'
 		}
