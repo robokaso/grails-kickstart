@@ -8,3 +8,4 @@
 *.log
 /grailskick.sublime-project
 /grailskick.sublime-workspace
+.idea

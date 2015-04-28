@@ -6,6 +6,8 @@ grails.project.war.file = "target/kickstart.war"
 grails.project.source.level = 1.6
 grails.project.target.level = 1.6
 
+grails.project.dependency.resolver = "maven"
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
