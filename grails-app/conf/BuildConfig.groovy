@@ -80,19 +80,11 @@ grails.project.dependency.resolution = {
 		compile ':rest-client-builder:2.1.1'
 		
 		compile ':platform-core:1.0.0'
-		// problematic atmosphere-snapshot dependency
-		// compile ':events-push:1.0.M7'
-		
+
 		runtime ":hibernate:3.6.10.6"
 		runtime ":console:1.2"
 		runtime ":fixtures:1.3"
 		runtime ":build-test-data:2.0.9"
-		
-		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
-		runtime ":grails-melody:1.14"
-		*/
-		
-		runtime ":runtime-logging:0.4"
 		
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.7"
