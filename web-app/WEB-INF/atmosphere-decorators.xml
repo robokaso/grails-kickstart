@@ -1,5 +1,0 @@
-<decorators>
-    <excludes>
-        <pattern>/g-eventsbus/*</pattern>
-    </excludes>
-</decorators>

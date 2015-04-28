@@ -46,8 +46,6 @@ grails.project.dependency.resolution = {
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
 
-		compile 'org.codehaus.groovy:groovy-backports-compat23:2.3.5'
-		
     }
 
     plugins {
@@ -60,6 +58,8 @@ grails.project.dependency.resolution = {
 		compile ":twitter-bootstrap:3.3.4"
 		compile ":font-awesome-resources:4.3.0.1"
         compile ":jquery:1.11.1"
+
+		compile ":scaffolding:2.1.1"
 		
 		// compile ':fields:1.3'
 		
@@ -77,10 +77,10 @@ grails.project.dependency.resolution = {
 		
 		compile ':platform-core:1.0.0'
 
-		runtime ":hibernate:3.6.10.6"
-		runtime ":console:1.2"
+		runtime ":hibernate:3.6.10.19"
+		runtime ":console:1.5.4"
 		runtime ":fixtures:1.3"
-		runtime ":build-test-data:2.0.9"
+		runtime ":build-test-data:2.4.0"
 		
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:2.0.3-3"
