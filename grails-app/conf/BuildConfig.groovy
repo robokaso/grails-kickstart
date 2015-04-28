@@ -32,7 +32,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.jboss.com/maven2/"
     }
 	
-	final GEB_VERSION = "0.9.2"
+	final GEB_VERSION = "0.10.0"
 	final SELENIUM_VERSION = "2.45.0"
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
@@ -45,45 +45,47 @@ grails.project.dependency.resolution = {
 		test "org.gebish:geb-spock:$GEB_VERSION"
 		
 		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
+
+		compile 'org.codehaus.groovy:groovy-backports-compat23:2.3.5'
 		
     }
 
     plugins {
 		
-        compile ":resources:1.2.1"
+        compile ":resources:1.2.14"
 		compile ':cached-resources:1.0'
 		compile ':zipped-resources:1.0'
 		compile ':cache-headers:1.1.5'
 		
 		compile ":less-resources:1.3.3.2"
 
-		compile ":cache:1.1.1"
+		compile ":cache:1.1.8"
 		
 		compile ":twitter-bootstrap:2.3.2"
 		compile ":font-awesome-resources:3.2.1.3"
-        compile ":jquery:1.10.2.2"
+        compile ":jquery:1.11.1"
 		
 		// compile ':fields:1.3'
 		
 		// why Shiro rather than Spring Security 
 		// http://www.katasoft.com/blog/2011/05/09/new-rbac-resource-based-access-control
-		compile(":shiro:1.2.0") {
+		compile(":shiro:1.2.1") {
 			excludes 'servlet-api'
 		}
 		compile ":joda-time:1.4"
-		compile(":mail:1.0.1") {
+		compile(":mail:1.0.7") {
 			excludes 'spring-test'
 		}
 		compile ":greenmail:1.3.4"
-		compile ':rest-client-builder:2.0.0'
+		compile ':rest-client-builder:2.1.1'
 		
-		compile ':platform-core:1.0.RC6'
+		compile ':platform-core:1.0.0'
 		// problematic atmosphere-snapshot dependency
 		// compile ':events-push:1.0.M7'
 		
 		runtime ":hibernate:3.6.10.6"
 		runtime ":console:1.2"
-		runtime ":fixtures:1.2"
+		runtime ":fixtures:1.3"
 		runtime ":build-test-data:2.0.9"
 		
 		/* problem with security http://jira.grails.org/browse/GPMELODY-7 
@@ -95,10 +97,10 @@ grails.project.dependency.resolution = {
 		test ":geb:$GEB_VERSION"
 		test ":code-coverage:1.2.7"
 		test ':functional-test-development:0.9.4'
-		test ":remote-control:1.4"
+		test ":remote-control:2.0"
 //		test ':auto-test:1.0.1'
 		
-		build(":codenarc:0.19") {
+		build(":codenarc:0.23") {
 			excludes 'groovy-all'
 		}
 
