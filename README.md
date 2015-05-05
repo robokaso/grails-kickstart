@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/critsk/grails-kickstart.png)](https://travis-ci.org/critsk/grails-kickstart)
+[![Build Status](https://travis-ci.org/robokaso/grails-kickstart.svg?branch=master)](https://travis-ci.org/robokaso/grails-kickstart)
 
 About
 -----
@@ -19,6 +19,3 @@ License
 **Apache License Version 2.0** (i.e. same as [Grails](http://grails.org/License") so that you don't have to think about licensing and focus on building webapps instead)
 
 
-Demo
----------
-Check the live application on ~~[CloudFoundry](http://grailskick.cloudfoundry.com)~~

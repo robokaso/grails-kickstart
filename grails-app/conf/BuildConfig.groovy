@@ -3,8 +3,8 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 grails.project.war.file = "target/kickstart.war"
 
-grails.project.source.level = 1.6
-grails.project.target.level = 1.6
+grails.project.source.level = 1.8
+grails.project.target.level = 1.8
 
 grails.project.dependency.resolver = "maven"
 
