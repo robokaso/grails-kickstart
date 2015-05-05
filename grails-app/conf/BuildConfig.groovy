@@ -44,7 +44,7 @@ grails.project.dependency.resolution = {
 		
 		test "org.gebish:geb-spock:$GEB_VERSION"
 		
-		compile "org.jadira.usertype:usertype.jodatime:1.9.1"
+		compile "org.jadira.usertype:usertype.jodatime:2.0.1"
 
     }
 
@@ -59,7 +59,7 @@ grails.project.dependency.resolution = {
 		compile ":font-awesome-resources:4.3.0.1"
         compile ":jquery:1.11.1"
 
-		compile ":scaffolding:2.1.1"
+		compile ":scaffolding:2.1.2"
 		
 		// compile ':fields:1.3'
 		
@@ -77,7 +77,7 @@ grails.project.dependency.resolution = {
 		
 		compile ':platform-core:1.0.0'
 
-		runtime ":hibernate:3.6.10.19"
+		runtime ":hibernate4:4.3.8.1"
 		runtime ":console:1.5.4"
 		runtime ":fixtures:1.3"
 		runtime ":build-test-data:2.4.0"
